@@ -1,0 +1,210 @@
+/* header 1 styling starts */
+.header-bar-1 {
+  @apply w-full flex justify-between items-center px-[40px] py-5 border-b border-b-muted text-text bg-gradient-to-r from-primary to-secondary shadow-md font-clean;
+}
+
+.section-header {
+  @apply flex items-center justify-between w-full flex-wrap lg:flex-nowrap;
+}
+
+.header-logo-container {
+  @apply flex items-center sm:items-start gap-1 text-center justify-center w-full lg:w-[25rem];
+}
+
+.icon-header {
+  @apply md:w-[80px] w-[30px] md:h-[80px] h-[30px];
+}
+
+.header-logo-container h1 {
+  @apply lg:w-[20rem] font-calligraphy text-center md:text-start text-accent 
+         drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] 
+         [text-shadow:1px_1px_0px_#8e4d9c] 
+}
+
+
+.allContacts {
+  @apply flex items-center w-full gap-3 flex-wrap md:flex-nowrap;
+}
+
+.phoneNumber, .mail, .location , .all-contact-main{
+  @apply flex items-center gap-2 w-full;
+}
+
+.phoneNumber p a, .mail a, .location p {
+  @apply text-[14px] font-scripture text-text  hover:text-muted;
+}
+
+.divNumbers, .mailList {
+  @apply flex flex-col;
+}
+
+.contactInvisible, .invisibleSocials {
+  @apply hidden;
+}
+
+.socials {
+  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[20rem] place-items-center;
+}
+
+.socials button {
+  @apply inline-flex items-center justify-center w-[2rem] h-[2rem] bg-accent/80 text-softWhite rounded-[5px] shadow-sm hover:bg-accent transition-all;
+}
+
+.socials button a {
+  @apply inline-flex items-center justify-center text-center no-underline text-background;
+}
+/* header 1 styling ends */
+
+
+/* header 2 styling refined */
+.secondHeader {
+  @apply w-full fixed flex justify-between items-center px-[40px] py-5 border-b bg-background/60 backdrop-blur-sm  text-text transition-all z-50;
+}
+
+.stickyIt {
+  @apply sticky top-0 w-full  border-b border-b-muted shadow-md bg-background;
+}
+
+.secondSection {
+  @apply flex items-center justify-center md:justify-between overflow-x-hidden w-full;
+}
+
+.navigatePages,
+.header-container-appoint {
+  @apply flex items-center;
+}
+.header-container-appoint {
+  @apply gap-4 w-[20rem] justify-end
+}
+@media (max-width: 580px) {
+  .header-container-appoint {
+    @apply w-full justify-start;
+  }
+}
+.navigatePages{
+  @apply md:gap-4 gap-2 w-full
+}
+.navigatePages .nav-link, .contact-flex p {
+  @apply text-text no-underline font-classic text-[15px] md:text-[20px] hover:text-primary;
+}
+
+.navigatePages .active, .active {
+  @apply text-accent font-semibold;
+}
+
+.header-container-appoint {
+  @apply gap-6;
+}
+
+.appointContainer button {
+  @apply flex items-center gap-1 font-scripture font-medium text-[14px] md:text-[16px] transition shadow-md bg-gradient-to-r from-accent/40 to-secondary/40
+  hover:bg-gradient-to-r hover:from-secondary/40 hover:to-accent;
+}
+/* header 2 styling ends */
+
+/* header 3 styling starts */
+.header-bar-3 {
+  @apply w-full absolute top-0 z-50 flex justify-between items-center px-[40px] py-5 border-b border-b-muted text-text bg-gradient-to-r from-primary to-secondary shadow-md transition-all duration-300;
+}
+.menu-icon{
+  @apply text-[20px] sm:text-[26px] text-text font-bold cursor-pointer;
+}
+.drawer-container{
+  @apply p-6 w-full sm:w-[300px] h-screen bg-primary/40
+}
+.icon-drawer-container{
+  @apply flex justify-end mb-4
+}
+.drawer-container .navigatePages{
+  @apply flex flex-col
+}
+.contact-flex{
+  @apply flex items-center gap-1
+}
+.subMenu{
+  @apply h-full flex flex-col items-center justify-center
+}
+.socials-drawer {
+  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[20rem] place-items-center my-2 justify-center;
+}
+.socials-drawer button{
+  @apply bg-transparent
+}
+.socials-drawer a {
+  @apply inline-flex items-center justify-center gap-4 w-[2rem] h-[2rem] bg-accent/80 text-softWhite rounded-[5px] shadow-sm hover:bg-accent transition-all text-center no-underline;
+}
+.drawer-header-container-appoint {
+  @apply flex items-center justify-center gap-4 w-full my-2
+}
+
+.drawer-header-container-appoint .appointContainer button {
+  @apply flex items-center justify-center gap-1 font-scripture font-medium text-[14px] md:text-[16px] transition shadow-md bg-gradient-to-r from-accent/40 to-secondary/40
+  hover:bg-gradient-to-r hover:from-secondary/40 hover:to-accent;
+}
+/* header 3 styling ends */
+
+/* toggle styling starts */
+.toggle-container{
+  @apply w-[42px] h-[24px] border-[1.5px] border-solid border-text rounded-[30px] flex items-center justify-between p-[2px] relative cursor-pointer;
+}
+
+.icon{
+  @apply text-[12px];
+}
+
+.ball{
+  @apply w-[15px] h-[15px] bg-primary rounded-[50%] absolute;
+}
+/* toggle styling ends */
+
+/* newsletter styling starts */
+.newsletter-container{
+  @apply bg-softWhite/50 relative py-20 flex justify-center 
+}
+.newsletter-container .mission-inner{
+  @apply bg-softWhite w-[90%] md:w-[40rem] py-10 rounded-lg border-b-[5px] border-b-primary shadow-lg animate-pulseFast hover:animate-none relative
+}
+.newsletter-container .mission-inner .quote{
+  @apply absolute text-[6rem] sm:text-[10rem] text-primary/5 right-0
+}
+.newsletter-container header{
+  @apply flex flex-col ;
+}
+.newsletter-container header h2{
+  @apply text-primary font-classic
+}
+.newsletter-container p{
+  @apply text-muted
+}
+.newsletter-container .form-section{
+  @apply flex flex-col gap-2
+}
+.newsletter-container form{
+  @apply flex items-center md:flex-row flex-col 
+}
+.newsletter-input {
+  @apply px-2 py-3 md:rounded-none rounded-lg md:rounded-tl-[5px] md:rounded-bl-[5px] outline-none border-none text-[16px] w-full;
+}
+
+.newsletter-button {
+  @apply px-5 py-3 outline-none border-none  bg-primary text-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
+}
+
+.newsletter-container .newsletter-error {
+  @apply text-[red] text-[13px] font-clean;
+}
+
+.newsletter-container .newsletter-success {
+  @apply text-[green] text-[13px] font-clean;
+}
+
+
+/* .curve-wrapper{
+    @apply relative
+} */
+
+/* newsletter styling ends */
+
+/* footer styling starts */
+
+/* footer styling ends */
