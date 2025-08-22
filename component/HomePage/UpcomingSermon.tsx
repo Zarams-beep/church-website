@@ -10,7 +10,8 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 export default function UpcomingSermon() {
   return (
     <section className="upcoming-section">
-      <div className="mission-inner">
+      <div className="container">
+        <div className="mission-inner">
         {/* Section Header Animation */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
@@ -147,6 +148,7 @@ export default function UpcomingSermon() {
             </button>
           </motion.div>
         </div>
+      </div>
       </div>
     </section>
   );

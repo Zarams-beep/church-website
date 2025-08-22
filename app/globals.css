@@ -20,15 +20,15 @@
 
 /* body styling starts */
 body {
-  @apply relative bg-background text-text;
+  @apply w-full overflow-x-hidden relative bg-background text-text;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
-.container{
-  @apply w-full h-full max-w-[1412px] 2xl:max-w-[1712px] overflow-y-hidden;
+.container {
+  @apply w-full max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-8 overflow-x-hidden;
 }
 
 h1 {
-  @apply text-[1rem] sm:text-[1.8rem] md:text-[2.5rem] font-bold text-text font-classic leading-tight ;
+  @apply text-[1rem] sm:text-[1.8rem] md:text-[2.5rem]  font-bold text-text font-classic leading-tight ;
 }
 
 h2 {
@@ -53,7 +53,7 @@ h6 {
 
 /* PARAGRAPH (OPTIONAL BASE STYLE) */
 p {
-  @apply text-base text-text font-clean leading-relaxed;
+  @apply text-base text-text font-clean leading-relaxed text-wrap;
 }
 
 /* LINKS */

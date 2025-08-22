@@ -83,6 +83,15 @@ colors: {
             opacity: "1",
           },
         },
+        gradientMove: {
+  '0%': {
+    backgroundPosition: '0% 50%',
+  },
+  '100%': {
+    backgroundPosition: '100% 50%',
+  },
+},
+
       },
       animation: {
         float: "float 3s ease-in-out infinite",
@@ -97,6 +106,7 @@ colors: {
         slideDown: "slideDown 0.5s ease-out",
         pulseFast: "pulseFast 0.8s ease-in-out infinite",
         fadeZoom: "fadeZoom 1s ease-in-out forwards",
+        gradientMove: 'gradientMove 3s linear infinite',
       },
        textShadow: {
     glow: "0 0 10px #f77f00, 0 0 20px #f38b23", // sunset glow

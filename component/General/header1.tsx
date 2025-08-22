@@ -49,7 +49,8 @@ const HeaderBar = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <section className="section-header">
+        <div className="container">
+          <section className="section-header">
           <div className="header-logo-container">
             <Image src="/Seekers_logo_colours.png" alt="Seekers_logo_colours" width={80} height={80} className="icon-header"/>
             <h1>Seekers of His Kingdom</h1>
@@ -145,6 +146,7 @@ const HeaderBar = () => {
 )}
 
         </section>
+        </div>
       </motion.header>
       <HeaderBar2/>
     </>

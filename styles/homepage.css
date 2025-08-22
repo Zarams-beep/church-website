@@ -1,9 +1,9 @@
 /* general styling starts */
 .homepage-main{
-  @apply flex flex-col gap-0
+  @apply flex flex-col w-full gap-0 overflow-x-hidden
 }
 .parellex-scrolling {
-  @apply bg-[url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D')];
+  @apply bg-[url('https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D')] w-full;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -13,14 +13,14 @@
 
 /* hero styling starts */
 .hero-section {
-  @apply w-full h-full bg-cover bg-center relative overflow-hidden;     
+  @apply w-screen h-full relative overflow-hidden;     
 }
 
 .hero-section-2{
-  @apply bg-[url('https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2h1cmNofGVufDB8fDB8fHww')] absolute inset-0 bg-cover bg-center z-0 
+  @apply bg-[url('https://images.unsplash.com/photo-1519491050282-cf00c82424b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2h1cmNofGVufDB8fDB8fHww')] absolute inset-0 bg-cover bg-center z-0 w-screen overflow-hidden
 }
 .overlay {
-  @apply absolute inset-0 bg-muted/40 z-10;
+  @apply absolute inset-0 bg-muted/40 z-10 overflow-hidden;
 }
 
 .overlay::after {
@@ -29,16 +29,18 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 60px;
-  margin-bottom: -0.3rem;
+  height: 90px;
+  margin-bottom: -0.4rem;
   background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
 }
-
+.hero-section-2 .container{
+  @apply overflow-hidden
+}
 .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full px-[40px] py-[10rem] justify-center w-full ;
+  @apply relative z-10 flex flex-col gap-[5px] h-full py-[10rem] justify-center w-full ;
 }
 
 .hero-content h1{
@@ -53,7 +55,7 @@
 
 /* mission and vision styling starts */
 .mission-vision-container {
-  @apply bg-background relative pb-[6rem] pt-[2rem];
+  @apply w-screen relative  pt-[2rem] ;
 }
 .mission-vision-container::after {
   content: "";
@@ -62,15 +64,17 @@
   left: 0;
   width: 100%;
   height: 60px;
-  margin-bottom: -1rem;
+  margin-bottom: -1.2rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23c16800'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
 }
-
+.mission-vision-container .container{
+  @apply overflow-hidden
+}
 .mission-inner {
-  @apply px-[40px] text-center flex flex-col gap-10
+  @apply text-center flex flex-col gap-10 pb-[6rem]
 }
 .header-main-container{
   @apply flex flex-col gap-3;
@@ -124,7 +128,7 @@
 
 /* featured styling starts */
 .featured-sermon {
-  @apply bg-primary my-[1rem] relative overflow-hidden pb-[3rem];
+  @apply bg-primary my-[1rem] relative overflow-hidden  pt-[2rem];
 }
 .featured-sermon::after {
   content: "";
@@ -139,11 +143,14 @@
   background-repeat: no-repeat;
   z-index: 15;
 }
+.featured-sermon .container{
+  @apply overflow-hidden
+}
 .sermon-sub-section{
   @apply flex items-center justify-between flex-col md:flex-row-reverse gap-8;
 }
 .sermon-details{
-  @apply flex flex-col gap-4
+  @apply flex flex-col gap-4 w-full
 }
 .sermon-details .series-title{
   @apply text-background font-bold
@@ -186,7 +193,7 @@
 
 /* about ministry styling starts */
 .about-ministry-container {
-  @apply relative overflow-hidden pb-[7rem];
+  @apply relative overflow-hidden pt-[3rem] w-full;
 }
 .about-ministry-container::after {
   content: "";
@@ -200,6 +207,9 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
+}
+.about-ministry-container .container{
+  @apply overflow-hidden
 }
 
 .about-ministry-container .mission-verse{
@@ -216,12 +226,12 @@
   }
   
   .about-ministry-img img {
-    @apply  w-[20rem] h-[30rem] rounded-xl object-cover shadow-lg hover:animate-pulse transition-transform duration-300;
+    @apply  w-full lg:w-[20rem] h-full md:h-[30rem] rounded-xl object-cover shadow-lg hover:animate-pulse transition-transform duration-300;
   }
   
   /* Scatter effect */
   .ministry-1 {
-    @apply mb-[3rem];
+    @apply mb-0 lg:mb-[3rem] lg:flex hidden;
   
   }
   
@@ -230,13 +240,13 @@
   }
   
   .ministry-3 {
-    @apply mb-[3rem];
+    @apply mb-[3rem] lg:flex hidden;
   }
 /* about ministry stying ends */
 
 /* seed journey styling starts */
 .fifth-container{
-    @apply bg-softWhite relative pb-[4rem]
+    @apply bg-softWhite relative
 }
 .fifth-container::after {
   content: "";
@@ -251,8 +261,11 @@
   background-repeat: no-repeat;
   z-index: 15;
 }
+.fifth-container .container{
+  @apply overflow-hidden
+}
 .how-help-container{
-  @apply flex flex-col md:flex-row items-center gap-x-10
+  @apply flex flex-col md:flex-row items-center gap-y-5 gap-x-10
 }
 .reverse-help{
   @apply md:flex-row-reverse;
@@ -297,7 +310,9 @@
   background-repeat: no-repeat;
   z-index: 15;
 } */
-
+.upcoming-section .container{
+  @apply overflow-hidden
+}
 .upcoming-header{
   @apply flex flex-col;
 }

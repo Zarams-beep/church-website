@@ -8,7 +8,8 @@ import Link from "next/link";
 export default function FeaturedSermon() {
   return (
     <section className="featured-sermon">
-      <div className="mission-inner">
+      <div className="container">
+        <div className="mission-inner">
         <div className="sermon-sub-section">
 
           {/* Left Side (Text Details) */}
@@ -65,6 +66,7 @@ export default function FeaturedSermon() {
           </motion.div>
 
         </div>
+      </div>
       </div>
     </section>
   );

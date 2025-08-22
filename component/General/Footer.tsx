@@ -13,15 +13,18 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       {/* Footer Links */}
-      <div className="footer-1">
+<div className="container">
+        <div className="footer-1">
         <section className="footer-section">
-          <Image
+          <div className="img-container-footer">
+            <Image
             src="/Seekers_logo_colours.png"
             alt="Seekers_logo_colours"
             width={100}
             height={100}
-            className="icon-header"
+            className="image-footer"
           />
+          </div>
           <h3 className="footer-section-title">Seekers of His Kingdom</h3>
         </section>
 
@@ -71,16 +74,14 @@ const Footer = () => {
               <TiSocialTwitterCircular className="footer-icon" />
             </a>
           </div>
-
-          <div className="copyright">
-            <BiCopyright />
-            <p>
+<div className="main-copyright">
+            <p className="copyright"><BiCopyright className="footer-icon"/>
               Copyright 2024, All Rights Reserved by{" "}
-              <span>Seekers of the Kingdom</span>
-            </p>
-          </div>
+              </p>
+              <span>Seekers of the Kingdom</span></div>
         </div>
       </div>
+</div>
     </footer>
   );
 };

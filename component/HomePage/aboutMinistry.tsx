@@ -8,7 +8,8 @@ export default function AboutMinistry() {
 
   return (
     <section className="about-ministry-container">
-        <div className="mission-inner">
+        <div className="container">
+          <div className="mission-inner">
            <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -68,6 +69,7 @@ export default function AboutMinistry() {
 
      
       </div></div>
+        </div>
     </section>
   );
 }

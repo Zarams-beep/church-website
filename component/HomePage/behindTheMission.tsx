@@ -56,7 +56,8 @@ const seedJourney = [
 export default function FromSeedToService() {
   return (
     <section className="fifth-container">
-      <div className="mission-inner">
+      <div className="container">
+        <div className="mission-inner">
       <motion.div  initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }} className="header-main-container">
@@ -84,6 +85,7 @@ export default function FromSeedToService() {
           />
         ))}
       </div></div>
+      </div>
     </section>
   );
 }

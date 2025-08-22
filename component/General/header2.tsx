@@ -49,7 +49,8 @@ const HeaderBar2 = () => {
   return (
     <>
       <header className={`secondHeader ${isSticky ? "stickyIt" : ""}`}>
-        <section className="secondSection">
+         <div className="container">
+          <section className="secondSection">
 
           {/* Desktop Navigation */}
           {!is580 && (
@@ -78,6 +79,7 @@ const HeaderBar2 = () => {
 
             </div>
         </section>
+         </div>
       </header>
     </>
   );

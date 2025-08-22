@@ -37,7 +37,8 @@ export default function Newletter() {
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
     >
-      <div className="mission-inner">
+      <div className="container">
+        <div className="mission-inner">
         <motion.div
           initial={{ opacity: 0, rotate: -10 }}
           whileInView={{ opacity: 1, rotate: 0 }}
@@ -107,6 +108,7 @@ export default function Newletter() {
             )}
           </AnimatePresence>
         </motion.section>
+      </div>
       </div>
     </motion.div>
   );
