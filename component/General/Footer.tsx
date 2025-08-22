@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 <div className="main-copyright">
             <p className="copyright"><BiCopyright className="footer-icon"/>
-              Copyright 2024, All Rights Reserved by{" "}
+              Copyright 2025, All Rights Reserved by{" "}
               </p>
               <span>Seekers of the Kingdom</span></div>
         </div>
