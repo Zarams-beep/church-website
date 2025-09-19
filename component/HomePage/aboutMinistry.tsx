@@ -31,7 +31,7 @@ export default function AboutMinistry() {
             Our story began with a simple mission
           </p>
           <Link
-            href="/about"
+            href="/about-us/#story"
             className="btn-about-us"
           >
             Learn More About Us

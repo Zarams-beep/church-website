@@ -1,4 +1,4 @@
-import "@/styles/about-us.css";
+import AboutPage from "@/component/AboutPage/AboutPage";
 
 export const metadata = {
   title: "Church About Us",
@@ -8,7 +8,7 @@ export const metadata = {
 export default function AboutUs(){
     return(
         <div className="">
-m,,m,
+          <AboutPage/>
         </div>
     )
 }

@@ -40,7 +40,7 @@ const HeaderBar3 = () => {
     { id: 2, name: "About Us", path: "/about-us" },
     { id: 3, name: "Semon", path: "/semon" },
     { id: 4, name: "Contact", path: "/contact" },
-    { id: 5, name: "Outreach", path: "/outreach" },
+    { id: 5, name: "Community", path: "/community" },
   ];
 
   useEffect(() => {

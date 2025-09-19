@@ -21,7 +21,7 @@ const HeaderBar2 = () => {
     { id: 2, name: "About Us", path: "/about-us" },
     { id: 3, name: "Semon", path: "/semon" },
     { id: 4, name: "Contact", path: "/contact" },
-    { id: 5, name: "Outreach", path: "/outreach" },
+    { id: 5, name: "Community", path: "/community" },
   ];
 
   useEffect(() => {
@@ -72,8 +72,8 @@ const HeaderBar2 = () => {
             <div className="header-container-appoint">
               <div className="appointContainer">
                 <button>
+                  <span>Join Us</span>
                   <IoTodayOutline />
-                  <span>Make An Appointment</span>
                 </button>
               </div>
 

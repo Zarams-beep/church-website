@@ -11,15 +11,16 @@ const config: Config = {
     extend: {
 colors: {
   // 🌞 Light Mode
-  background: "#fefae0",       // Papyrus cream
-  softWhite: "#fffdf3",        // Clean soft white for surfaces
-  text: "#2e2e2e",              // Rich neutral text
-  muted: "#7d7d7d",             // Muted gray for subtle text
+  background: "#fefae0",
+  softWhite: "#fffdf3",
+  text: "#2e2e2e",
+  muted: "#7d7d7d",
 
-  primary: "#c16800",          // Deep amber — warmer, less shouty
-  accent: "#e07b39",           // Muted sunset peach
-  secondary: "#8e4d9c",        // Deep, spiritual purple (less cartoonish)
-  clay: "#814421",             // Rich earthy brown
+  primary: "#c16800",
+  accent: "#e07b39",
+  secondary: "#8e4d9c",
+  secondaryDark:'#44284a',
+  clay: "#814421",
 },
       fontFamily: {
         classic: ['"Cormorant Garamond"', "serif"],

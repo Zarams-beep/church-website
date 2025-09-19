@@ -1,6 +1,6 @@
 /* newsletter styling starts */
 .newsletter-container{
-  @apply bg-softWhite/50 relative py-20 flex justify-center items-center
+  @apply bg-softWhite/20 relative py-20 flex justify-center items-center
 }
 .newsletter-container .container{
     @apply flex items-center justify-center overflow-hidden

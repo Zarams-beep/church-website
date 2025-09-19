@@ -32,7 +32,7 @@ export default function HomepageHero() {
         viewport={{ amount: 0.3, once: false }}
         className="hero-content"
       >
-        <h6 className="">Welcome to our Church</h6>
+        <h6 className="">Welcome to our Fellowship</h6>
         <h1 className="">Become a Part of Our Community</h1>
         <h4 className="">
           Join us in worship, fellowship, and purpose. You are always welcome here.
