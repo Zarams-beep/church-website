@@ -1,6 +1,6 @@
 /* header 1 styling starts */
 .header-bar-1 {
-  @apply w-full flex justify-between items-center py-5 border-b border-b-muted text-text bg-gradient-to-r from-primary to-secondary shadow-md font-clean;
+  @apply w-full flex justify-between items-center py-5 border-b border-b-muted text-text bg-gradient-to-r from-background to-secondary shadow-md font-clean;
 }
 
 .section-header {
@@ -47,11 +47,11 @@
 }
 
 .socials button {
-  @apply inline-flex items-center justify-center w-[2rem] h-[2rem] bg-accent/80 text-softWhite rounded-[5px] shadow-sm hover:bg-accent transition-all;
+  @apply inline-flex items-center justify-center w-[2rem] h-[2rem] bg-accent/80 text-text rounded-[5px] shadow-sm hover:bg-accent transition-all;
 }
 
 .socials button a {
-  @apply inline-flex items-center justify-center text-center no-underline text-background;
+  @apply inline-flex items-center justify-center text-center no-underline text-text;
 }
 /* header 1 styling ends */
 

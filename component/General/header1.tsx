@@ -52,7 +52,7 @@ const HeaderBar = () => {
         <div className="container">
           <section className="section-header">
           <div className="header-logo-container">
-            <Image src="/Seekers_logo_colours.png" alt="Seekers_logo_colours" width={80} height={80} className="icon-header"/>
+            <Image src="/Seekers_logo_colours_black_text.png" alt="Seekers logo" width={80} height={80} className="icon-header"/>
             <h1>Seekers of His Kingdom</h1>
           </div>
 

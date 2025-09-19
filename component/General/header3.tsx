@@ -71,7 +71,7 @@ const HeaderBar3 = () => {
       <header className={`header-bar-3 ${isSticky ? "stickyIt" : ""}`}>
         <div className="header-logo-container">
           <Image
-            src="/Seekers_logo_colours.png"
+            src="/Seekers_logo_colours_black_text.png"
             alt="Seekers Logo"
             width={80}
             height={80}
