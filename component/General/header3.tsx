@@ -115,7 +115,7 @@ const HeaderBar3 = () => {
               ))}
               <div className="linkContact" onClick={toggleContactMenu}>
                 <div className="contact-flex">
-                  <p>Contact</p>
+                  <p>Contact Details</p>
                   <p className="arrowContact">
                     {isContactOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                   </p>

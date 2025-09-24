@@ -107,13 +107,13 @@
 
 /* header 3 styling starts */
 .header-bar-3 {
-  @apply w-full absolute top-0 z-50 flex justify-between items-center px-[40px] py-5 border-b border-b-muted text-text bg-gradient-to-r from-primary to-secondary shadow-md transition-all duration-300;
+  @apply w-full absolute top-0 z-50 flex justify-between items-center px-[40px] py-5 border-b border-b-muted text-text bg-gradient-to-r from-softWhite to-secondary shadow-md transition-all duration-300;
 }
 .menu-icon{
   @apply text-[20px] sm:text-[26px] text-text font-bold cursor-pointer;
 }
 .drawer-container{
-  @apply p-6 w-full sm:w-[300px] h-screen bg-primary/40
+  @apply p-6 w-full sm:w-[300px] h-screen bg-secondary/40
 }
 .icon-drawer-container{
   @apply flex justify-end mb-4
@@ -134,15 +134,18 @@
   @apply bg-transparent
 }
 .socials-drawer a {
-  @apply inline-flex items-center justify-center gap-4 w-[2rem] h-[2rem] text-softWhite rounded-[5px] shadow-sm  transition-all text-center no-underline bg-transparent;
+  @apply inline-flex items-center justify-center gap-4 w-[2rem] h-[2rem] text-text rounded-[5px] shadow-sm  transition-all text-center no-underline bg-transparent;
 }
 .drawer-header-container-appoint {
   @apply flex items-center justify-center gap-4 w-full my-2
 }
 
 .drawer-header-container-appoint .appointContainer button {
-  @apply flex items-center justify-center gap-1 font-bahnschrift font-medium text-[14px] md:text-[16px] transition shadow-md bg-gradient-to-r from-accent/40 to-secondary/40
-  hover:bg-gradient-to-r hover:from-secondary/40 hover:to-accent;
+  @apply flex items-center justify-center gap-1 font-bahnschrift font-medium text-[14px] md:text-[16px] transition shadow-md bg-secondary
+  hover:bg-secondary/60;
+}
+.arrowContact{
+  @apply hover:cursor-pointer
 }
 /* header 3 styling ends */
 
