@@ -23,11 +23,7 @@ colors: {
   clay: "#814421",
 },
       fontFamily: {
-        classic: ['"Cormorant Garamond"', "serif"],
-        clean: ['"Open Sans"', "sans-serif"],
-        divine: ['"EB Garamond"', "serif"],
-        scripture: ['"Crimson Pro"', "serif"],
-        calligraphy: ['"Great Vibes"', "cursive"],
+        bahnschrift: ['"Bahnschrift"', "sans-serif"], 
       },
       keyframes: {
         float: {

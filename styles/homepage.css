@@ -90,13 +90,13 @@
 }
 
 .mission-title {
-  @apply text-[1.6rem] sm:text-[2rem] font-semibold text-secondary font-classic;
+  @apply text-[1.6rem] sm:text-[2rem] font-semibold text-secondary font-bahnschrift;
 }
 .main-mission-verse{
   @apply flex flex-col justify-center items-center gap-1;
 }
 .verse-reference {
-  @apply text-[1rem] font-clean italic text-muted w-full sm:w-[45rem] text-end;
+  @apply text-[1rem] font-bahnschrift italic text-muted w-full sm:w-[45rem] text-end;
 }
 
 .mission-grid {
@@ -287,7 +287,7 @@
   @apply w-full md:w-[70%] text-center md:text-left
 }
 .how-help-content h3{
-  @apply text-[30px] font-semibold text-secondary font-calligraphy
+  @apply text-[30px] font-semibold text-secondary font-bahnschrift
 }
 .how-help-content p{
   @apply text-text/80 leading-relaxed mb-10
@@ -318,7 +318,7 @@
   @apply flex flex-col;
 }
 .upcoming-header h6{
-  @apply text-[12px] uppercase text-secondary font-clean
+  @apply text-[12px] uppercase text-secondary font-bahnschrift
 }
 .upcoming-header .mission-title{
   @apply text-text
@@ -336,7 +336,7 @@
   @apply w-full flex flex-col items-end justify-end 
 }
 .upcoming-sermon-section-1 .header-1 p{
-  @apply text-[18px] font-scripture ;
+  @apply text-[18px] font-bahnschrift ;
 }
 .upcoming-sermon-section-1 .header-1 p:first-of-type{
   @apply font-bold mb-[-.7rem]
@@ -345,10 +345,10 @@
   @apply w-full flex flex-col gap-[.3rem] sm:px-[1rem] text-left;
 }
 .upcoming-sermon-section-1 .header-2 h6{
-  @apply text-[14px] text-background uppercase font-classic 
+  @apply text-[14px] text-background uppercase font-bahnschrift 
 }
 .upcoming-sermon-section-1 .header-2 h3{
-  @apply font-scripture font-bold
+  @apply font-bahnschrift font-bold
 }
 .upcoming-sermon-section-1 .header-2 p{
   @apply text-[15px] text-clay
@@ -366,7 +366,7 @@
   @apply p-3 rounded-full flex items-center justify-center bg-background text-primary
 }
 .upcoming-content-section .upcoming-content-1 p{
-  @apply text-[15px] font-scripture
+  @apply text-[15px] font-bahnschrift
 }
 .upcoming-content-section .upcoming-content-1 a{
   @apply hover:text-secondary

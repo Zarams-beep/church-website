@@ -15,7 +15,7 @@
   @apply flex flex-col ;
 }
 .newsletter-container header h2{
-  @apply text-text font-classic
+  @apply text-text font-bahnschrift
 }
 .newsletter-container p{
   @apply text-muted
@@ -35,11 +35,11 @@
 }
 
 .newsletter-container .newsletter-error {
-  @apply text-[red] text-[13px] font-clean;
+  @apply text-[red] text-[13px] font-bahnschrift;
 }
 
 .newsletter-container .newsletter-success {
-  @apply text-[green] text-[13px] font-clean;
+  @apply text-[green] text-[13px] font-bahnschrift;
 }
 
 
@@ -70,7 +70,7 @@
     @apply w-[5rem] h-[5rem] self-center
 }
 .footer-1 h3 {
-  @apply text-[25px] w-[10rem] font-semibold font-divine leading-normal text-center md:leading-tight text-text transition-all duration-700;
+  @apply text-[25px] w-[10rem] font-semibold font-bahnschrift leading-normal text-center md:leading-tight text-text transition-all duration-700;
 }
 
 .footer-1 h3:hover {
@@ -85,7 +85,7 @@
     @apply flex flex-col sm:items-start sm:justify-start items-center justify-center gap-1;
 }
 .footer-section-title{
-    @apply font-bold text-[20px] text-text font-scripture
+    @apply font-bold text-[20px] text-text font-bahnschrift
 }
 .footer-section-1 a{
     @apply text-[14px] font-thin text-text hover:text-muted

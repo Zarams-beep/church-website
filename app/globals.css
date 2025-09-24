@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=EB+Garamond:wght@400;500;600;700&family=Crimson+Pro:wght@400;500;600;700&family=Great+Vibes&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,32 +26,32 @@ body {
 }
 
 h1 {
-  @apply text-[1rem] sm:text-[1.8rem] md:text-[2.5rem]  font-bold text-text font-classic leading-tight ;
+  @apply text-[1rem] sm:text-[1.8rem] md:text-[2.5rem]  font-bold text-text font-bahnschrift leading-tight ;
 }
 
 h2 {
-  @apply text-3xl md:text-4xl font-semibold text-text font-classic leading-snug;
+  @apply text-3xl md:text-4xl font-semibold text-text font-bahnschrift leading-snug;
 }
 
 h3 {
-  @apply text-2xl font-semibold text-text font-classic;
+  @apply text-2xl font-semibold text-text font-bahnschrift;
 }
 
 h4 {
-  @apply text-xl font-medium text-text font-classic italic;
+  @apply text-xl font-medium text-text font-bahnschrift italic;
 }
 
 h5 {
-  @apply text-lg font-medium text-text font-clean;
+  @apply text-lg font-medium text-text font-bahnschrift;
 }
 
 h6 {
-  @apply font-semibold text-[20px] md:text-[30px] text-secondaryDark font-scripture;
+  @apply font-semibold text-[20px] md:text-[30px] text-secondaryDark font-bahnschrift;
 }
 
 /* PARAGRAPH (OPTIONAL BASE STYLE) */
 p {
-  @apply text-base text-text font-clean leading-relaxed text-wrap;
+  @apply text-base text-text font-bahnschrift leading-relaxed text-wrap;
 }
 
 /* LINKS */
@@ -63,7 +61,7 @@ a {
 
 /* BUTTONS */
 button {
-  @apply px-6 py-2 rounded-lg bg-primary text-text font-scripture hover:bg-accent  transition;
+  @apply px-6 py-2 rounded-lg  font-bahnschrift   transition;
 }
 
 /* focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent */

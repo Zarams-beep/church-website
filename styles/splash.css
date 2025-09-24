@@ -15,7 +15,7 @@
 }
 
 .text-container h1{
-    @apply text-2xl md:text-4xl font-calligraphy text-primary
+    @apply text-2xl md:text-4xl font-bahnschrift text-primary
 }
 
 .text-container p{
