@@ -66,11 +66,12 @@
   width: 100%;
   height: 60px;
   margin-bottom: -1.2rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23c16800'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%238e4d9c'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
 }
+
 .mission-vision-container .container{
   @apply overflow-hidden
 }
@@ -104,7 +105,7 @@
 }
 
 .mission-card {
-  @apply bg-softWhite p-[1.5rem] rounded-[1rem] flex items-center flex-col gap-1 hover:animate-pulseFast transition-transform duration-300 border-l-[4px] border-solid border-l-primary;
+  @apply bg-softWhite p-[1.5rem] rounded-[1rem] flex items-center flex-col gap-1 hover:animate-pulseFast transition-transform duration-300 border-l-[4px] border-solid border-l-secondary;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
 }
@@ -114,7 +115,7 @@
 }
 
 .mission-card-icon {
-  @apply text-[2.5rem] text-primary;
+  @apply text-[2.5rem] text-secondary;
 }
 
 .mission-card-title {
@@ -129,7 +130,7 @@
 
 /* featured styling starts */
 .featured-sermon {
-  @apply bg-primary my-[1rem] relative overflow-hidden  pt-[2rem];
+  @apply bg-secondary my-[1rem] relative overflow-hidden  pt-[2rem];
 }
 .featured-sermon::after {
   content: "";
@@ -154,10 +155,10 @@
   @apply flex flex-col gap-4 w-full
 }
 .sermon-details .series-title{
-  @apply text-background font-bold
+  @apply text-softWhite font-bold
 }
 .sermon-details .series-description{
-  @apply text-clay
+  @apply text-secondaryDark
 }
 .sermon-thumbnail{
   @apply w-full md:w-[60rem];
@@ -179,11 +180,11 @@
 }
 
 .btn-primary {
-  @apply bg-background text-primary hover:bg-muted hover:text-background;
+  @apply bg-softWhite text-secondary hover:bg-muted hover:text-softWhite;
 }
 
 .btn-secondary {
-  @apply bg-transparent border-[1px] border-solid border-background text-background hover:bg-secondary hover:text-background hover:border-none;
+  @apply bg-transparent border-[1px] border-solid border-softWhite text-softWhite hover:bg-secondaryDark hover:text-softWhite hover:border-none;
 }
 
 .sermon-preview {
@@ -281,7 +282,7 @@
   @apply absolute flex justify-between z-10 w-full  h-full
 }
 .arrow-help button{
-  @apply bg-muted/40 text-text text-[2rem] px-2 py-1 rounded
+  @apply bg-muted/40 text-secondary text-[2rem] px-2 py-1 rounded
 }
 .how-help-content{
   @apply w-full md:w-[70%] text-center md:text-left
@@ -330,7 +331,7 @@
   @apply flex items-center md:flex-row flex-col h-full md:h-[30rem]
 }
 .upcoming-sermon-section-1{
-  @apply flex flex-col gap-3 w-full md:w-[50rem] h-full bg-primary px-5 py-1 rounded-lg md:rounded-tl-lg md:rounded-bl-lg md:rounded-none;
+  @apply flex flex-col gap-3 w-full md:w-[50rem] h-full bg-secondary px-5 py-1 rounded-lg md:rounded-tl-lg md:rounded-bl-lg md:rounded-none;
 }
 .upcoming-sermon-section-1 .header-1{
   @apply w-full flex flex-col items-end justify-end 
@@ -351,7 +352,7 @@
   @apply font-bahnschrift font-bold
 }
 .upcoming-sermon-section-1 .header-2 p{
-  @apply text-[15px] text-clay
+  @apply text-[15px] text-secondaryDark
 }
 .upcoming-sermon-section-2{
   @apply w-full h-full md:flex hidden 
@@ -363,7 +364,7 @@
   @apply flex items-center gap-2
 }
 .upcoming-content-section .upcoming-content-1 button{
-  @apply p-3 rounded-full flex items-center justify-center bg-background text-primary
+  @apply p-3 rounded-full flex items-center justify-center bg-background text-secondary
 }
 .upcoming-content-section .upcoming-content-1 p{
   @apply text-[15px] font-bahnschrift

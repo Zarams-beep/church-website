@@ -6,10 +6,10 @@
     @apply flex items-center justify-center overflow-hidden
 }
 .newsletter-container .mission-inner{
-  @apply bg-softWhite w-[90%] md:w-[40rem] p-10 rounded-lg border-b-[5px] border-b-primary shadow-lg animate-pulseFast hover:animate-none relative
+  @apply bg-softWhite w-[90%] md:w-[40rem] p-10 rounded-lg border-b-[5px] border-b-secondary shadow-lg relative
 }
 .newsletter-container .mission-inner .quote{
-  @apply absolute text-[6rem] sm:text-[10rem] text-primary/5 right-0
+  @apply absolute text-[6rem] sm:text-[10rem] text-secondary/5 right-0
 }
 .newsletter-container header{
   @apply flex flex-col ;
@@ -31,7 +31,7 @@
 }
 
 .newsletter-button {
-  @apply px-5 py-3 outline-none border-none  bg-primary text-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
+  @apply px-5 py-3 outline-none border-none  bg-secondary text-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
 }
 
 .newsletter-container .newsletter-error {
@@ -88,7 +88,7 @@
     @apply font-bold text-[20px] text-text font-bahnschrift
 }
 .footer-section-1 a{
-    @apply text-[14px] font-thin text-text hover:text-muted
+    @apply text-[14px] font-thin text-text hover:text-secondary
 }
 .location{
     @apply text-wrap text-center
@@ -103,7 +103,7 @@
     @apply flex items-center gap-1
 }
 .footer-icons a{
-    @apply p-2 rounded-full bg-text text-background hover:bg-muted hover:text-background
+    @apply p-2 rounded-full bg-text text-background hover:bg-secondary hover:text-background
 }
 .footer-icon{
     @apply text-[20px];
@@ -115,6 +115,6 @@
     @apply text-text text-[16px] flex items-center justify-center gap-1;
 }
 .main-copyright span{
-  @apply text-muted hover:text-primary
+  @apply text-muted hover:text-secondary
 }
 /* footer styling ends */
