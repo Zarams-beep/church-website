@@ -21,7 +21,7 @@ export default function SplashScreen() {
     <div className="splash">
       <div className="logo-container">
         <Image
-          src="/undraw_adventure-map_3e4p.svg"
+          src="/undraw_adventure-map_purple.svg"
           alt="Seekers of the Kingdom"
           width={250}
           height={250}
