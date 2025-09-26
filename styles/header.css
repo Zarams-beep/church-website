@@ -8,7 +8,10 @@
 }
 
 .header-logo-container {
-  @apply flex items-center sm:items-start gap-1 text-center justify-center w-full lg:w-[25rem];
+  @apply flex items-start gap-1 text-center justify-center w-full lg:w-[25rem];
+}
+.header-logo-container div{
+  @apply flex justify-start items-start flex-col gap-1;
 }
 
 .icon-header {
