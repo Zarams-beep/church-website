@@ -1,0 +1,385 @@
+/* general styling starts */
+.homepage-main{
+  @apply flex flex-col w-full gap-0 overflow-x-hidden
+}
+.parellex-scrolling {
+  @apply bg-[url('https://images.unsplash.com/photo-1563902242731-bcde8ffa1d36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fGNvbW11bml0eXxlbnwwfHwwfHx8MA%3D%3D')] w-full;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* min-height: 100vh; */
+}
+/* general styling ends */
+
+/* hero styling starts */
+.hero-section {
+  @apply w-screen h-full relative overflow-hidden;     
+}
+
+.hero-section-2{
+  @apply bg-[url('https://images.unsplash.com/photo-1609234656381-73e732808098?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ0fHxmZWxsb3dzaGlwfGVufDB8fDB8fHww')] absolute inset-0 bg-cover bg-center z-0 w-screen overflow-hidden
+}
+
+.overlay {
+  @apply absolute inset-0 bg-muted/40 z-10 overflow-hidden;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  margin-bottom: -0.4rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.hero-section-2 .container{
+  @apply overflow-hidden
+}
+.hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full py-[10rem] justify-center w-full ;
+}
+
+.hero-content h1{
+  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem];
+}
+
+.hero-content h4{
+  @apply mb-4;
+}
+
+/* hero styling ends */
+
+/* mission and vision styling starts */
+.mission-vision-container {
+  @apply w-screen relative  pt-[2rem] ;
+}
+.mission-vision-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -1.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%238e4d9c'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+
+.mission-vision-container .container{
+  @apply overflow-hidden
+}
+.mission-inner {
+  @apply text-center flex flex-col gap-10 pb-[6rem]
+}
+.header-main-container{
+  @apply flex flex-col gap-3 ;
+}
+
+.mission-header {
+  @apply flex items-center justify-center gap-[0.75rem];
+}
+
+.mission-icon {
+  @apply text-[1.6rem] sm:text-[2rem] text-secondary;
+}
+
+.mission-title {
+  @apply text-[1.6rem] sm:text-[2rem] font-semibold text-secondary font-bahnschrift;
+}
+.main-mission-verse{
+  @apply flex flex-col justify-center items-center gap-1;
+}
+.verse-reference {
+  @apply text-[1rem] font-bahnschrift italic text-muted w-full sm:w-[45rem] text-end;
+}
+
+.mission-grid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-[2rem];
+}
+
+.mission-card {
+  @apply bg-softWhite p-[1.5rem] rounded-[1rem] flex items-center flex-col gap-1 hover:animate-pulseFast transition-transform duration-300 border-l-[4px] border-solid border-l-secondary;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.mission-card-icon {
+  @apply text-[2.5rem] text-secondary;
+}
+
+.mission-card-title {
+  @apply text-[1.25rem] font-[600] text-text;
+}
+
+.mission-card-text {
+  @apply text-[0.95rem] text-muted;
+}
+
+/* mission and vision styling ends */
+
+/* featured styling starts */
+.featured-sermon {
+  @apply bg-secondary my-[1rem] relative overflow-hidden  pt-[2rem];
+}
+.featured-sermon::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.featured-sermon .container{
+  @apply overflow-hidden
+}
+.sermon-sub-section{
+  @apply flex items-center justify-between flex-col md:flex-row-reverse gap-8;
+}
+.sermon-details{
+  @apply flex flex-col gap-4 w-full
+}
+.sermon-details .series-title{
+  @apply text-softWhite font-bold
+}
+.sermon-details .series-description{
+  @apply text-secondaryDark
+}
+.sermon-thumbnail{
+  @apply w-full md:w-[60rem];
+}
+
+.sermon-thumbnail img{
+  @apply w-full h-full rounded-[1rem];
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sermon-cta{
+  @apply flex items-center justify-center gap-3;
+}
+ .btn {
+  @apply py-[0.75rem] px-[1.5rem] rounded-[6px];
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  @apply bg-softWhite text-secondary hover:bg-muted hover:text-softWhite;
+}
+
+.btn-secondary {
+  @apply bg-transparent border-[1px] border-solid border-softWhite text-softWhite hover:bg-secondaryDark hover:text-softWhite hover:border-none;
+}
+
+.sermon-preview {
+  @apply mt-[1rem] w-full flex items-center justify-center;
+}
+
+/* featured styling ends */
+
+/* about ministry styling starts */
+.about-ministry-container {
+  @apply relative overflow-hidden pt-[3rem] w-full;
+}
+.about-ministry-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fffdf3'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.about-ministry-container .container{
+  @apply overflow-hidden
+}
+
+.about-ministry-container .mission-verse{
+  @apply w-full md:w-[40rem]
+}
+.btn-about-us{
+  @apply bg-secondary text-softWhite flex items-center justify-center  py-2 px-5 hover:bg-secondary/20 hover:animate-wiggle transition-transform duration-300 mt-4 rounded-lg;
+}
+.about-ministry-img-container{
+  @apply max-w-6xl mx-auto w-full flex items-center justify-center;
+}
+ .about-ministry-img {
+    @apply w-full flex items-center justify-center gap-2;
+  }
+  
+  .about-ministry-img img {
+    @apply  w-full lg:w-[20rem] h-full md:h-[30rem] rounded-xl object-cover shadow-lg hover:animate-pulse transition-transform duration-300;
+  }
+  
+  /* Scatter effect */
+  .ministry-1 {
+    @apply mb-0 lg:mb-[3rem] lg:flex hidden;
+  
+  }
+  
+  .ministry-2 {
+    @apply mt-[3rem];
+  }
+  
+  .ministry-3 {
+    @apply mb-[3rem] lg:flex hidden;
+  }
+/* about ministry stying ends */
+
+/* seed journey styling starts */
+.fifth-container{
+    @apply bg-softWhite relative
+}
+.fifth-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.fifth-container .container{
+  @apply overflow-hidden
+}
+.how-help-container{
+  @apply flex flex-col md:flex-row items-center gap-y-5 gap-x-10
+}
+.reverse-help{
+  @apply md:flex-row-reverse;
+}
+.how-help-card{
+  @apply relative  w-full md:w-1/2 h-[300px];
+}
+.how-help-card img{
+  @apply object-cover rounded-lg h-[10rem] w-[10rem] 
+}
+.arrow-help{
+  @apply absolute flex justify-between z-10 w-full  h-full
+}
+.arrow-help button{
+  @apply bg-muted/40 text-secondary text-[2rem] px-2 py-1 rounded
+}
+.how-help-content{
+  @apply w-full md:w-[70%] text-center md:text-left
+}
+.how-help-content h3{
+  @apply text-[30px] font-semibold text-secondary font-bahnschrift
+}
+.how-help-content p{
+  @apply text-text/80 leading-relaxed mb-10
+}
+/* seed journey styling ends */
+
+/* upcoming sermon styling starts */
+.upcoming-section{
+  @apply bg-background py-6 relative
+}
+/* .upcoming-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -.1rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='rgba(125,125,125,0.5)'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+} */
+.upcoming-section .container{
+  @apply overflow-hidden
+}
+.upcoming-header{
+  @apply flex flex-col;
+}
+.upcoming-header h6{
+  @apply text-[12px] uppercase text-secondary font-bahnschrift
+}
+.upcoming-header .mission-title{
+  @apply text-text
+}
+.main-upcoming-sermon-section{
+  @apply flex flex-col gap-4
+}
+.upcoming-sermon-section{
+  @apply flex items-center md:flex-row flex-col h-full md:h-[30rem]
+}
+.upcoming-sermon-section-1{
+  @apply flex flex-col gap-3 w-full md:w-[50rem] h-full bg-secondary px-5 py-1 rounded-lg md:rounded-tl-lg md:rounded-bl-lg md:rounded-none;
+}
+.upcoming-sermon-section-1 .header-1{
+  @apply w-full flex flex-col items-end justify-end 
+}
+.upcoming-sermon-section-1 .header-1 p{
+  @apply text-[18px] font-bahnschrift ;
+}
+.upcoming-sermon-section-1 .header-1 p:first-of-type{
+  @apply font-bold mb-[-.7rem]
+}
+.upcoming-sermon-section-1 .header-2{
+  @apply w-full flex flex-col gap-[.3rem] sm:px-[1rem] text-left;
+}
+.upcoming-sermon-section-1 .header-2 h6{
+  @apply text-[14px] text-background uppercase font-bahnschrift 
+}
+.upcoming-sermon-section-1 .header-2 h3{
+  @apply font-bahnschrift font-bold
+}
+.upcoming-sermon-section-1 .header-2 p{
+  @apply text-[15px] text-secondaryDark
+}
+.upcoming-sermon-section-2{
+  @apply w-full h-full md:flex hidden 
+}
+.upcoming-content-section{
+  @apply flex flex-col gap-4 sm:p-[1rem]
+}
+.upcoming-content-section .upcoming-content-1{
+  @apply flex items-center gap-2
+}
+.upcoming-content-section .upcoming-content-1 button{
+  @apply p-3 rounded-full flex items-center justify-center bg-background text-secondary
+}
+.upcoming-content-section .upcoming-content-1 p{
+  @apply text-[15px] font-bahnschrift
+}
+.upcoming-content-section .upcoming-content-1 a{
+  @apply hover:text-secondary
+}
+.upcoming-sermon-section-2 img{
+  @apply w-full h-full rounded-tr-lg rounded-br-lg
+}
+.upcoming-section .btn-container{
+  @apply flex justify-end
+}
+.upcoming-section .btn-container button{
+  @apply bg-secondary hover:bg-secondary/30 text-[14px] flex items-center text-softWhite hover:animate-pulseFast
+}
+/* upcoming sermon styling ends */
+

@@ -1,0 +1,134 @@
+/* general styling starts */
+.aboutpage-main{
+  @apply flex flex-col w-full gap-0 overflow-x-hidden
+}
+.parellex-scrolling {
+  @apply bg-[url('https://images.unsplash.com/photo-1562203221-84a4acfddcd8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHdvcnNoaXAlMjBqZXN1c3xlbnwwfHwwfHx8MA%3D%3D')] w-full;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* min-height: 100vh; */
+}
+/* general styling ends */
+
+/* hero styling starts */
+.hero-section {
+  @apply w-screen h-full relative overflow-hidden;     
+}
+
+.about-hero-section{
+  @apply bg-[url('https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgyfHx3b3JzaGlwJTIwamVzdXN8ZW58MHx8MHx8fDA%3D')] absolute inset-0 bg-cover bg-center z-0 w-screen overflow-hidden
+}
+
+/* hero styling ends */
+
+/*about story styling starts */
+.about-story-container{
+  @apply relative overflow-hidden w-full  pb-[4rem];
+}
+.about-story-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%238e4d9c'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.about-story-container .mission-verse{
+  @apply text-center;
+}
+.mission-verse span{
+  @apply font-semibold text-secondary
+}
+.about-story-container .header-main-container{
+  @apply justify-center items-center
+}
+.about-story-container .swiper-button-next::after,
+.about-story-container .swiper-button-prev::after {
+  @apply text-secondary text-[30px] md:text-[40px];
+}
+
+.about-story-container .swiper-pagination-bullet {
+  @apply bg-muted ;
+  opacity: 0.7;
+}
+.about-story-container .swiper-pagination-bullet-active {
+  @apply bg-secondary;
+  opacity: 1;
+}
+.video-stage-container{
+  @apply px-[4rem] flex flex-col md:flex-row items-center gap-8;
+}
+.video-reverse-stage{
+  @apply md:flex-row-reverse
+}
+.video-section{
+  @apply  w-[15rem] sm:w-[30rem] h-[20rem] relative
+}
+.video-section video{
+  @apply h-full w-full bg-muted rounded-md shadow-md;
+}
+.video-section video source{
+  @apply h-full w-full
+}
+.video-text-container{
+  @apply flex flex-col gap-2 justify-center items-center
+}
+.video-text-container h3{
+  @apply text-[18px] font-semibold text-center;
+}
+.video-text-container p{
+  @apply text-[16px] font-thin text-center
+}
+.story-swiper .alternating-container{
+  @apply py-[2rem]
+}
+/*about story styling ends */
+
+/* department styling starts */
+.departments-section {
+  @apply bg-secondary relative overflow-hidden pb-[4rem] pt-[1rem] h-full
+}
+.departments-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.departments-section .container{
+  @apply overflow-hidden
+}
+.departments-section .mission-icon, .departments-section .mission-title , .departments-section .mission-verse{
+  @apply text-softWhite text-center
+}
+.departments-grid{
+  @apply grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5 mt-10
+}
+.department-card{
+  @apply bg-softWhite text-secondary p-3 flex items-center gap-5 rounded-md shadow-md md:flex-row flex-col gap-y-2;
+}
+.sub-depart-card{
+  @apply flex flex-col md:items-start items-center md:justify-start justify-center;
+}
+.sub-depart-card p, .sub-depart-card h3{
+  @apply md:text-start text-center text-secondary
+}
+.department-icon{
+  @apply h-full flex items-center justify-center
+}
+.depart-icon{
+  @apply text-[30px]
+}
+/*department styling ends */

@@ -1,0 +1,120 @@
+/* newsletter styling starts */
+.newsletter-container{
+  @apply bg-softWhite/20 relative py-20 flex justify-center items-center
+}
+.newsletter-container .container{
+    @apply flex items-center justify-center overflow-hidden
+}
+.newsletter-container .mission-inner{
+  @apply bg-softWhite w-[90%] md:w-[40rem] p-10 rounded-lg border-b-[5px] border-b-secondary shadow-lg relative
+}
+.newsletter-container .mission-inner .quote{
+  @apply absolute text-[6rem] sm:text-[10rem] text-secondary/5 right-0
+}
+.newsletter-container header{
+  @apply flex flex-col ;
+}
+.newsletter-container header h2{
+  @apply text-text font-bahnschrift
+}
+.newsletter-container p{
+  @apply text-muted
+}
+.newsletter-container .form-section{
+  @apply flex flex-col gap-2
+}
+.newsletter-container form{
+  @apply flex items-center md:flex-row flex-col 
+}
+.newsletter-input {
+  @apply px-2 py-3 md:rounded-none rounded-lg md:rounded-tl-[5px] md:rounded-bl-[5px] outline-none border-none text-[16px] w-full;
+}
+
+.newsletter-button {
+  @apply px-5 py-3 outline-none border-none  bg-secondary text-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
+}
+
+.newsletter-container .newsletter-error {
+  @apply text-[red] text-[13px] font-bahnschrift;
+}
+
+.newsletter-container .newsletter-success {
+  @apply text-[green] text-[13px] font-bahnschrift;
+}
+
+
+/* .curve-wrapper{
+    @apply relative
+} */
+
+/* newsletter styling ends */
+
+/* footer styling starts */
+
+.footer-container{
+    @apply py-6 bg-background text-text;
+}
+.footer-container .container{
+    @apply overflow-hidden flex flex-col gap-2
+}
+.footer-section{
+    @apply flex flex-col items-center justify-center sm:items-start sm:justify-start;
+}
+.footer-1{
+    @apply grid grid-cols-1 sm:grid-cols-2 md:flex items-start justify-between gap-x-20 gap-y-10 w-full
+}
+.img-container-footer{
+    @apply w-full h-full flex items-center justify-center
+}
+.footer-1 .image-footer{
+    @apply w-[5rem] h-[5rem] self-center
+}
+.footer-1 h3 {
+  @apply text-[25px] w-[10rem] font-semibold font-bahnschrift leading-normal text-center md:leading-tight text-text transition-all duration-700;
+}
+
+.footer-1 h3:hover {
+  @apply text-transparent bg-clip-text animate-gradientMove;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #c16800, #e07b39, #8e4d9c, #814421, #7d7d7d);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+}
+
+.footer-section-1{
+    @apply flex flex-col sm:items-start sm:justify-start items-center justify-center gap-1;
+}
+.footer-section-title{
+    @apply font-bold text-[20px] text-text font-bahnschrift
+}
+.footer-section-1 a{
+    @apply text-[14px] font-thin text-text hover:text-secondary
+}
+.location{
+    @apply text-wrap text-center
+}
+.footer-2{
+    @apply flex items-center  justify-center;
+}
+.footer-sub-2{
+    @apply flex w-[100%] md:w-[55rem] items-center mt-5 pt-5 justify-between border-t border-t-text md:flex-row flex-col gap-3
+}
+.footer-icons{
+    @apply flex items-center gap-1
+}
+.footer-icons a{
+    @apply p-2 rounded-full bg-text text-background hover:bg-secondary hover:text-background
+}
+.footer-icon{
+    @apply text-[20px];
+}
+.main-copyright{
+  @apply flex md:flex-row flex-col gap-1 items-center justify-center
+}
+.copyright {
+    @apply text-text text-[16px] flex items-center justify-center gap-1;
+}
+.main-copyright span{
+  @apply text-muted hover:text-secondary
+}
+/* footer styling ends */

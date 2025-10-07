@@ -1,0 +1,48 @@
+.splash {
+  @apply fixed inset-0 bg-background flex flex-col items-center justify-center z-[999] px-6;
+}
+
+.logo-container {
+  @apply animate-fadeZoom;
+}
+
+.logo-container img{
+    @apply w-40 h-40 sm:w-60 sm:h-60 object-contain
+}
+
+.text-container {
+  @apply text-center mt-6;
+}
+
+.text-container h1{
+    @apply text-2xl md:text-4xl font-bahnschrift text-secondary
+}
+
+.text-container p{
+    @apply text-sm md:text-base text-muted italic
+}
+
+.dots::after {
+  content: '';
+  display: inline-block;
+  width: 1ch;
+  animation: dots 1.2s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
+  100% {
+    content: '';
+  }
+}

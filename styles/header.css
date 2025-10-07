@@ -1,0 +1,168 @@
+/* header 1 styling starts */
+.header-bar-1 {
+  @apply w-full flex justify-between items-center py-5 border-b border-b-muted text-text bg-gradient-to-r from-softWhite to-secondary shadow-md font-bahnschrift overflow-hidden;
+}
+
+.section-header {
+  @apply flex items-center justify-center w-full flex-wrap lg:flex-nowrap;
+}
+
+.header-logo-container {
+  @apply flex items-start gap-1 text-center justify-center w-full lg:w-[25rem];
+}
+.header-logo-container div{
+  @apply flex justify-start items-start flex-col gap-1;
+}
+
+.icon-header {
+  @apply md:w-[80px] w-[30px] md:h-[80px] h-[30px];
+}
+
+.header-logo-container h1 {
+  @apply lg:w-[20rem] font-bahnschrift text-center md:text-start text-text 
+         drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] 
+         [text-shadow:1px_1px_0px_#8e4d9c] 
+}
+
+
+.allContacts {
+  @apply flex items-center w-full gap-3 flex-wrap md:flex-nowrap;
+}
+
+.phoneNumber, .mail, .location , .all-contact-main{
+  @apply flex items-center gap-2 w-full;
+}
+
+.phoneNumber p a, .mail a, .location p {
+  @apply text-[14px] font-bahnschrift text-text  hover:text-muted;
+}
+
+.divNumbers, .mailList {
+  @apply flex flex-col;
+}
+
+.contactInvisible, .invisibleSocials {
+  @apply hidden;
+}
+
+.socials {
+  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[20rem] place-items-center;
+}
+
+.socials button {
+  @apply inline-flex items-center justify-center w-[2rem] h-[2rem] text-text rounded-[5px] 
+   border border-secondary shadow-lg transition-all;
+}
+
+.socials button a {
+  @apply inline-flex items-center justify-center text-center no-underline text-text bg-transparent;
+}
+/* header 1 styling ends */
+
+
+/* header 2 styling refined */
+.secondHeader {
+  @apply w-full fixed flex justify-center items-center py-5 border-b bg-softWhite backdrop-blur-sm  text-text transition-all z-50;
+}
+.secondHeader .container{
+  @apply flex justify-center items-center
+}
+.stickyIt {
+  @apply sticky top-0 w-full  border-b border-b-muted shadow-md bg-background;
+}
+
+.secondSection {
+  @apply flex items-center justify-center md:justify-between overflow-x-hidden w-full;
+}
+
+.navigatePages,
+.header-container-appoint {
+  @apply flex items-center;
+}
+.header-container-appoint {
+  @apply gap-4 w-[20rem] justify-end
+}
+@media (max-width: 580px) {
+  .header-container-appoint {
+    @apply w-full justify-start;
+  }
+}
+.navigatePages{
+  @apply md:gap-4 gap-2 w-full;
+}
+.navigatePages .nav-link, .contact-flex p {
+  @apply text-text no-underline font-bahnschrift text-[15px] md:text-[20px] hover:text-secondary;
+}
+
+.navigatePages .active, .active {
+  @apply text-secondary font-semibold;
+}
+
+.header-container-appoint {
+  @apply gap-6;
+}
+
+.appointContainer button {
+  @apply flex items-center gap-1 font-bahnschrift font-medium text-[14px] md:text-[16px] transition shadow-md bg-secondary
+  hover:bg-secondary/60;
+}
+/* header 2 styling ends */
+
+/* header 3 styling starts */
+.header-bar-3 {
+  @apply w-full absolute top-0 z-50 flex justify-between items-center px-[40px] py-5 border-b border-b-muted text-text bg-gradient-to-r from-softWhite to-secondary shadow-md transition-all duration-300;
+}
+.menu-icon{
+  @apply text-[20px] sm:text-[26px] text-text font-bold cursor-pointer;
+}
+.drawer-container{
+  @apply p-6 w-full sm:w-[300px] h-screen bg-secondary/40
+}
+.icon-drawer-container{
+  @apply flex justify-end mb-4
+}
+.drawer-container .navigatePages{
+  @apply flex flex-col
+}
+.contact-flex{
+  @apply flex items-center gap-1
+}
+.subMenu{
+  @apply h-full flex flex-col items-center justify-center
+}
+.socials-drawer {
+  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[20rem] place-items-center my-2 justify-center;
+}
+.socials-drawer button{
+  @apply bg-transparent
+}
+.socials-drawer a {
+  @apply inline-flex items-center justify-center gap-4 w-[2rem] h-[2rem] text-text rounded-[5px] shadow-sm  transition-all text-center no-underline bg-transparent;
+}
+.drawer-header-container-appoint {
+  @apply flex items-center justify-center gap-4 w-full my-2
+}
+
+.drawer-header-container-appoint .appointContainer button {
+  @apply flex items-center justify-center gap-1 font-bahnschrift font-medium text-[14px] md:text-[16px] transition shadow-md bg-secondary
+  hover:bg-secondary/60;
+}
+.arrowContact{
+  @apply hover:cursor-pointer
+}
+/* header 3 styling ends */
+
+/* toggle styling starts */
+.toggle-container{
+  @apply w-[42px] h-[24px] border-[1.5px] border-solid border-text rounded-[30px] flex items-center justify-between p-[2px] relative cursor-pointer;
+}
+
+.icon{
+  @apply text-[12px];
+}
+
+.ball{
+  @apply w-[15px] h-[15px] bg-primary rounded-[50%] absolute;
+}
+/* toggle styling ends */
+
