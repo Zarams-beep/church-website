@@ -117,13 +117,16 @@
   @apply grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5 mt-10
 }
 .department-card{
-  @apply bg-softWhite text-secondary p-3 flex items-center gap-5 rounded-md shadow-md md:flex-row flex-col gap-y-2;
+  @apply bg-softWhite text-neutral-500 p-3 flex items-center gap-5 rounded-md shadow-md md:flex-row flex-col gap-y-2;
+}
+ .hoveredIt,.hoveredIt .sub-depart-card p,.hoveredIt .sub-depart-card h3{
+  @apply bg-neutral-500 text-softWhite;
 }
 .sub-depart-card{
   @apply flex flex-col md:items-start items-center md:justify-start justify-center;
 }
 .sub-depart-card p, .sub-depart-card h3{
-  @apply md:text-start text-center text-secondary
+  @apply md:text-start text-center text-neutral-500
 }
 .department-icon{
   @apply h-full flex items-center justify-center
@@ -132,3 +135,39 @@
   @apply text-[30px]
 }
 /*department styling ends */
+
+/*Testimonies styling starts*/
+.testimonies-section {
+  @apply relative overflow-hidden pb-[4rem] pt-[1rem] h-full
+}
+.testimonies-section .mission-icon, .testimonies-section .mission-title , .testimonies-section .mission-verse{
+  @apply text-center
+}
+.testimonies-grid{
+  @apply flex flex-col gap-2  mt-5 bg-white p-8 rounded-2xl shadow-md ;
+}
+.testimonies-phrase{
+  @apply flex items-center justify-between gap-2 relative md:flex-row flex-col
+}
+.test-img-main-container{
+  @apply relative w-full h-[20rem] 
+}
+.test-img-main-container img{
+  @apply w-full h-full;
+}
+.test-content-container{
+  @apply w-full flex flex-col gap-2 text-center
+}
+.test-content-container p{
+  @apply italic text-neutral-800;
+}
+.test-content-container h4{
+  @apply font-semibold text-secondary
+}
+.test-content-container span{
+  @apply text-neutral-500 text-sm
+}
+.arrow-container{
+  @apply flex justify-between items-center px-3
+}
+/*Testimonies styling ends*/

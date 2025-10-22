@@ -4,14 +4,14 @@
 }
 
 .section-header {
-  @apply flex items-center justify-center w-full flex-wrap lg:flex-nowrap;
+  @apply flex items-center justify-center w-full flex-wrap lg:flex-nowrap overflow-hidden;
 }
 
 .header-logo-container {
-  @apply flex items-start gap-1 text-center justify-center w-full lg:w-[25rem];
+  @apply flex items-start gap-1 text-center justify-center w-full lg:w-[25rem] overflow-hidden;
 }
 .header-logo-container div{
-  @apply flex justify-start items-start flex-col gap-1;
+  @apply flex justify-start items-start flex-col gap-1 overflow-hidden;
 }
 
 .icon-header {
@@ -23,18 +23,29 @@
          drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] 
          [text-shadow:1px_1px_0px_#8e4d9c] 
 }
+.header-logo-container h1:hover, .header-logo-container h3:hover{
+    @apply text-transparent bg-clip-text animate-gradientMove;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #c16800, #e07b39, #8e4d9c, #814421, #7d7d7d);
+  background-size: 300% 300%;
+  background-repeat: no-repeat;
+   background-image: linear-gradient(90deg, #c16800, #e07b39, #8e4d9c, #814421, #7d7d7d);
+}
 
 
 .allContacts {
-  @apply flex items-center w-full gap-3 flex-wrap md:flex-nowrap;
+  @apply flex items-center w-full gap-3 flex-wrap md:flex-nowrap overflow-hidden;
 }
 
-.phoneNumber, .mail, .location , .all-contact-main{
-  @apply flex items-center gap-2 w-full;
+.phoneNumber, .mail, .location {
+  @apply flex items-center gap-0;
+}
+.all-contact-main{
+  @apply flex items-center justify-between w-full
 }
 
-.phoneNumber p a, .mail a, .location p {
-  @apply text-[14px] font-bahnschrift text-text  hover:text-muted;
+.phoneNumber p a, .mail .mailList a, .location p {
+  @apply text-[14px] font-bahnschrift text-text  hover:text-muted text-wrap;
 }
 
 .divNumbers, .mailList {
@@ -46,7 +57,7 @@
 }
 
 .socials {
-  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[20rem] place-items-center;
+  @apply grid grid-cols-6 md:grid-cols-3 gap-1 w-full md:w-[15rem] place-items-center overflow-hidden;
 }
 
 .socials button {
@@ -62,7 +73,7 @@
 
 /* header 2 styling refined */
 .secondHeader {
-  @apply w-full fixed flex justify-center items-center py-5 border-b bg-softWhite backdrop-blur-sm  text-text transition-all z-50;
+  @apply w-full fixed flex justify-center items-center py-5 border-b bg-softWhite/40 backdrop-blur-sm  text-text transition-all z-50;
 }
 .secondHeader .container{
   @apply flex justify-center items-center

@@ -9,6 +9,7 @@ import {
   FaBroadcastTower,
 } from "react-icons/fa";
 import { HiUserGroup } from "react-icons/hi2";
+import { useState } from "react";
 
 const ministries = [
   {
@@ -44,6 +45,8 @@ const ministries = [
 ];
 
 export default function DepartmentsSection() {
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <section className="departments-section" id="ministries">
       <div className="container">
@@ -70,7 +73,11 @@ export default function DepartmentsSection() {
           {ministries.map((dept, index) => (
             <motion.div
               key={index}
-              className="department-card"
+              onHoverStart={() => setHoveredIndex(index)}
+              onHoverEnd={() => setHoveredIndex(null)}
+              className={`department-card ${
+                hoveredIndex === index ? "hoveredIt" : ""
+              }`}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}

@@ -51,13 +51,13 @@ const HeaderBar = () => {
       >
         <div className="container">
           <section className="section-header">
-          <div className="header-logo-container">
+          <Link href="/" className="header-logo-container">
             <Image src="/Seekers_logo_colours_black_text.png" alt="Seekers logo" width={80} height={80} className="icon-header"/>
             <div>
               <h1>Seekers</h1>
               <h3>of His Kingdom</h3>
             </div>
-          </div>
+          </Link>
 
 {windowWidth !== null && (
   <motion.div
@@ -92,8 +92,9 @@ const HeaderBar = () => {
     >
       <BsEnvelopeAt className="icon-header-2" />
       <div className="mailList">
-        <Link href="mailto:youremail@example.com">youremail@example.com</Link>
-        <Link href="mailto:youremail@example.com">youremail@example.com</Link>
+        <Link href="mailto:seekersofhiskingdomglobal@gmail.com">seekersofhiskingdomglobal@gmail.com</Link>
+        <Link href="mailto:seekersofhiskingdomglobal@gmail.com">seekersofhiskingdomglobal@gmail.com</Link>
+        
       </div>
     </motion.div>
 
@@ -103,10 +104,9 @@ const HeaderBar = () => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: 0.4 }}
     >
-      <GrLocation />
+      <GrLocation className="icon-header-2"/>
       <p className="address">
-        3742 Graystone Lakes, <br />
-        Macon GA Georgia, GA 307
+        3742 Graystone Lakes
       </p>
     </motion.div>
    </div>
@@ -130,7 +130,7 @@ const HeaderBar = () => {
         { icon: <SlSocialTwitter />, key: "twitter1" },
         { icon: <SlSocialYoutube />, key: "youtube" },
         { icon: <SlSocialLinkedin />, key: "linkedin" },
-        { icon: <SlSocialInstagram />, key: "instagram" },
+        { icon: <SlSocialInstagram />, key: "https://www.instagram.com/seekersofhiskingdom/" },
       ].map(({ icon, key }, index) => (
         <motion.button
           key={key}
