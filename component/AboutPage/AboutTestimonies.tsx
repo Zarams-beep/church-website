@@ -101,15 +101,15 @@ export default function TestimoniesSection() {
           <div className="arrow-container">
             <button
               onClick={prevSlide}
-              className="bg-purple-100 p-2 rounded-full hover:bg-purple-200"
+              className=""
             >
-              <FaArrowLeftLong className="text-purple-600" />
+              <FaArrowLeftLong className="arrow-icon" />
             </button>
             <button
               onClick={nextSlide}
-              className="bg-purple-100 p-2 rounded-full hover:bg-purple-200"
+              className=""
             >
-              <FaArrowRightLong className="text-purple-600" />
+              <FaArrowRightLong className="arrow-icon" />
             </button>
           </div>
         </motion.div>

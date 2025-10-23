@@ -149,11 +149,11 @@
 .testimonies-phrase{
   @apply flex items-center justify-between gap-2 relative md:flex-row flex-col
 }
-.test-img-main-container{
-  @apply relative w-full h-[20rem] 
+.test-img-container{
+  @apply relative w-full h-full  
 }
-.test-img-main-container img{
-  @apply w-full h-full;
+.test-img-container img{
+  @apply w-full h-full rounded-lg;
 }
 .test-content-container{
   @apply w-full flex flex-col gap-2 text-center
@@ -169,5 +169,11 @@
 }
 .arrow-container{
   @apply flex justify-between items-center px-3
+}
+.arrow-container button{
+  @apply bg-neutral-100 p-2 rounded-full hover:bg-neutral-200
+}
+.arrow-icon{
+  @apply text-secondary hover:text-secondaryDark text-[16px]
 }
 /*Testimonies styling ends*/
