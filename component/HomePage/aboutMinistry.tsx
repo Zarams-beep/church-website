@@ -45,21 +45,21 @@ export default function AboutMinistry() {
           className='about-ministry-img'
         >
           <Image
-            src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://res.cloudinary.com/dhifpki0r/image/upload/v1761133987/SOHK_002_qjbl1v.jpg"
             alt="Our Ministry Team"
             width={600}
             height={400}
             className="ministry-1"
           />
           <Image
-            src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://res.cloudinary.com/dhifpki0r/image/upload/v1761133987/SOHK_004_atzo9i.jpg"
             alt="Our Ministry Team"
             width={600}
             height={400}
             className="ministry-2"
           />
           <Image
-            src="https://images.unsplash.com/photo-1547382002-b908c9367d83?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D"
+            src="https://res.cloudinary.com/dhifpki0r/image/upload/v1761133981/SOHK_003_ktskpr.jpg"
             alt="Our Ministry Team"
             width={600}
             height={400}
