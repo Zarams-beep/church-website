@@ -1,19 +1,58 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 
 export default function HeroAbout() {
+  const [showFirst, setShowFirst] = useState(true);
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setShowFirst((prev) => !prev);
+    }, 6000);
+    return () => clearInterval(interval)
+  },[])
   return (
     <section className="hero-section">
-      {/* Background Image */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="about-hero-section"/>
-      {/* Dark Overlay */}
+
+ <AnimatePresence mode="wait">
+        {showFirst ? (
+          <motion.div
+            key="first"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1.05 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+            }}
+            className="hero-section-bg"
+            style={{
+              backgroundImage:
+                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761767162/SOHK_001_jmowp7.jpg')",
+            }}
+          />
+        ) : (
+          <motion.div
+            key="second"
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1.05 }}
+            exit={{ opacity: 0 }}
+            transition={{
+              duration: 3,
+              ease: "easeInOut",
+            }}
+            className="hero-section-bg"
+            style={{
+              backgroundImage:
+                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761805748/SOHK_038_xqndee.jpg')",
+            }}
+          />
+        )}
+      </AnimatePresence>
+      
       <div className="overlay" />
 
       {/* Content */}

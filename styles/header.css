@@ -115,7 +115,7 @@
 
 .appointContainer button {
   @apply flex items-center gap-1 font-bahnschrift font-medium text-[14px] md:text-[16px] transition shadow-md bg-secondary
-  hover:bg-secondary/60;
+  hover:bg-secondary/60 text-softWhite;
 }
 /* header 2 styling ends */
 

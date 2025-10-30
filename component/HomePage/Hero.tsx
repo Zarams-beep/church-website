@@ -25,7 +25,7 @@ export default function HomepageHero() {
             animate={{ opacity: 1, scale: 1.05 }}
             exit={{ opacity: 0 }}
             transition={{
-              duration: 3, // faster fade
+              duration: 3,
               ease: "easeInOut",
             }}
             className="hero-section-bg"
