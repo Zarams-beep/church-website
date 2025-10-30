@@ -93,11 +93,11 @@
 }
 /*about story styling ends */
 
-/* department styling starts */
-.departments-section {
+/* program styling starts */
+.program-section {
   @apply bg-secondary relative overflow-hidden pb-[4rem] pt-[1rem] h-full
 }
-.departments-section::after {
+.program-section::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -110,17 +110,29 @@
   background-repeat: no-repeat;
   z-index: 15;
 }
-.departments-section .container{
+.program-section .container{
   @apply overflow-hidden
 }
-.departments-section .mission-icon, .departments-section .mission-title , .departments-section .mission-verse{
+.program-section .mission-icon, .program-section .mission-title , .program-section .mission-verse{
   @apply text-softWhite text-center
 }
-.departments-grid{
-  @apply grid grid-cols-1 md:grid-cols-2 gap-y-5 gap-x-5 mt-10
+.program-grid{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-5 mt-10
 }
-.department-card{
-  @apply bg-softWhite text-neutral-500 p-3 flex items-center gap-5 rounded-md shadow-md md:flex-row flex-col gap-y-2;
+.program-card{
+  @apply bg-softWhite text-neutral-500 flex items-center gap-5 rounded-md shadow-md flex-col gap-y-2;
+}
+.program-img-container{
+  @apply w-full h-[22rem]
+}
+.program-img-container img{
+  @apply w-full h-full
+}
+.program-card p:first-child{
+  @apply text-muted text-sm italic
+}
+.program-card p:last-child{
+  @apply text-gray-700 text-sm leading-relaxed text-center
 }
  .hoveredIt,.hoveredIt .sub-depart-card p,.hoveredIt .sub-depart-card h3{
   @apply bg-neutral-500 text-softWhite;
@@ -131,13 +143,13 @@
 .sub-depart-card p, .sub-depart-card h3{
   @apply md:text-start text-center text-neutral-500
 }
-.department-icon{
+.program-icon{
   @apply h-full flex items-center justify-center
 }
 .depart-icon{
   @apply text-[30px]
 }
-/*department styling ends */
+/*program styling ends */
 
 /*Testimonies styling starts*/
 .testimonies-section {
@@ -183,11 +195,11 @@
 
 /* Team styling starts */
 .team-section {
-  @apply py-20 bg-neutral-50 relative;
+  @apply py-20 bg-neutral-50 relative overflow-hidden;
 }
 
 .team-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 ;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 overflow-hidden;
 }
 
 .team-card {
