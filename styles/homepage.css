@@ -13,7 +13,10 @@
 
 /* hero styling starts */
 .hero-section {
-  @apply w-screen h-full relative overflow-hidden;
+  @apply  h-full relative overflow-hidden bg-[url('/Seekers_logo_colours_black_text.png')];
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-section-bg {
@@ -46,13 +49,18 @@
 }
 
 .hero-content h1{
-  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem];
+  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem] text-background;
 }
 
 .hero-content h4{
-  @apply mb-4;
+  @apply mb-4 text-background/50;
 }
-
+.hero-content .btn-hero{
+  @apply w-[10rem] py-2  rounded-md bg-secondaryDark text-background
+}
+.hero-content .btn-hero button{
+  @apply self-center w-full;
+}
 /* hero styling ends */
 
 /* mission and vision styling starts */

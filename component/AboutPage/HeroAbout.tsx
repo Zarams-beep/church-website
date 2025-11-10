@@ -11,7 +11,7 @@ export default function HeroAbout() {
   useEffect(()=>{
     const interval = setInterval(()=>{
       setShowFirst((prev) => !prev);
-    }, 6000);
+    }, 60000);
     return () => clearInterval(interval)
   },[])
   return (
@@ -94,7 +94,7 @@ export default function HeroAbout() {
           We gather to worship, serve, and impact lives far beyond these walls.
         </motion.h4>
 
-        <Link href="/join-us" passHref>
+        <Link href="/join-us" className="btn-hero">
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

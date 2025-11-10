@@ -11,7 +11,7 @@ export default function HomepageHero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setShowFirst((prev) => !prev);
-    }, 6000);
+    }, 60000);
     return () => clearInterval(interval);
   }, []);
 
@@ -69,7 +69,7 @@ export default function HomepageHero() {
           <h4>
             Join us in worship, fellowship, and purpose. You are always welcome here.
           </h4>
-          <Link href="/about-us">
+          <Link href="/about-us" className="btn-hero">
             <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               Learn More
             </motion.button>
