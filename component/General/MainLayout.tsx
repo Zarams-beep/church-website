@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import SplashScreen from "./Splash";
-import HeaderBar from "./header1";
+import HeaderBar2 from "./header2";
 import Footer from "./Footer";
 import HeaderBar3 from "./header3";
 
@@ -37,7 +37,7 @@ export default function MainLayoutSection({ children }: Props) {
         <SplashScreen />
       ) : (
         <>
-          {is580 ? <HeaderBar3 /> : <HeaderBar />}
+          {is580 ? <HeaderBar3 /> : <HeaderBar2 />}
           {children}
           <Footer />
         </>

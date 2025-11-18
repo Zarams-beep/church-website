@@ -1,0 +1,68 @@
+/*General Contact Styling */
+.contactpage-main{
+    @apply flex flex-col w-full gap-0 overflow-x-hidden
+}
+.contactUs-form-section .container{
+    @apply flex items-start gap-10 mt-[6rem]
+}
+.left-side-container{
+    @apply space-y-6 bg-softWhite rounded-lg py-4 px-6 w-[50rem] h-[40rem]
+}
+.left-side-container header{
+    @apply flex flex-col gap-3;
+}
+.left-side-container header h6{
+    @apply text-secondary font-semibold
+}
+.left-side-container h1{
+    @apply text-3xl font-bold text-muted;
+}
+.left-side-container p{
+    @apply text-muted/40 italic;
+}
+.left-side-form {
+    @apply flex flex-col gap-2;
+}
+.left-side-form-sub{
+    @apply
+    grid grid-cols-2 gap-y-10 gap-x-4; 
+}
+.contactUs-input, .contactUs-select, .contactUs-message{
+    @apply flex flex-col gap-1
+}
+.contactUs-input label, .contactUs-select label, .contactUs-message label{
+    @apply text-muted text-[16px] font-semibold
+}
+.contactUs-input input, .contactUs-message textarea{
+    @apply w-full p-2 rounded-lg outline-1 outline-muted shadow-md
+}
+.contactUs-subject{
+    @apply  flex flex-wrap gap-4
+}
+.contactUs-subject label{
+    @apply flex items-center gap-2 capitalize
+}
+.contactUs-subject label input{
+    @apply hover:cursor-pointer
+}
+.error-gray-border{
+    @apply border border-[gray]
+}
+.error-red-border{
+    @apply border border-[red]
+}
+.success-text{
+    @apply text-[green] text-[12px];
+}
+.error-text{
+    @apply text-[12px] text-[red]
+}
+.contactUs-submit-container{
+    @apply flex items-center justify-center my-3;
+}
+.contactUs-submit-container button{
+    @apply bg-secondary text-softWhite
+}
+.contact-right-side{
+    @apply space-y-8 rounded-lg py-4 px-6 w-[50rem] h-[40rem];
+}

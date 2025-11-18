@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
 colors: {
-  // 🌞 Light Mode
+  // Light Mode
   background: "#fefae0",
   softWhite: "#fffdf3",
   text: "#2e2e2e",

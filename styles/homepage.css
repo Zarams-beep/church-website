@@ -47,7 +47,9 @@
 .hero-content {
   @apply relative z-10 flex flex-col gap-[5px] h-full py-[10rem] justify-center w-full ;
 }
-
+.hero-content h6{
+  @apply text-background
+}
 .hero-content h1{
   @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem] text-background;
 }

@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-  @apply text-[1rem] sm:text-[1.8rem] md:text-[2.5rem]  font-bold text-text font-bahnschrift leading-tight ;
+  @apply text-[1rem] sm:text-[1.8rem] md:text-[1.5rem]  font-bold text-text font-bahnschrift leading-tight ;
 }
 
 h2 {

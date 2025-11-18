@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
-import { IoTodayOutline } from "react-icons/io5";
+import Image from "next/image";
 interface HeaderType {
   id: number;
   name: string;
@@ -51,8 +51,17 @@ const HeaderBar2 = () => {
     <>
       <header className={`secondHeader ${isSticky ? "stickyIt" : ""}`}>
          <div className="container">
-          <section className="secondSection">
 
+<div className="header-not-link-logo-container">
+            <Link href="/" className="header-logo-container">
+            <Image src="/Seekers_logo_colours_black_text.png" alt="Seekers logo" width={80} height={80} className="icon-header"/>
+            <div>
+              <h1>Seekers of His Kingdom</h1>
+            </div>
+          </Link>
+</div>
+
+          <section className="secondSection">
           {/* Desktop Navigation */}
           {!is580 && (
             <div className="navigatePages">
@@ -67,18 +76,6 @@ const HeaderBar2 = () => {
               ))}
             </div>
           )}
-
-          {/* Desktop Appointment Button */}
-       
-            <div className="header-container-appoint">
-              <div className="appointContainer">
-                <button>
-                  <span>Join Us</span>
-                  <IoTodayOutline />
-                </button>
-              </div>
-
-            </div>
         </section>
          </div>
       </header>
