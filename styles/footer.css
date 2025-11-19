@@ -52,7 +52,7 @@
 /* footer styling starts */
 
 .footer-container{
-    @apply py-6 bg-background text-text;
+    @apply py-6 bg-secondaryDark text-softWhite;
 }
 .footer-container .container{
     @apply overflow-hidden flex flex-col gap-2
@@ -70,7 +70,7 @@
     @apply w-[5rem] h-[5rem] self-center
 }
 .footer-1 h3 {
-  @apply text-[25px] w-[10rem] font-semibold font-bahnschrift leading-normal text-center md:leading-tight text-text transition-all duration-700;
+  @apply text-[25px] w-[10rem] font-semibold font-bahnschrift leading-normal text-center md:leading-tight text-softWhite transition-all duration-700;
 }
 
 .footer-1 h3:hover {
@@ -85,10 +85,10 @@
     @apply flex flex-col sm:items-start sm:justify-start items-center justify-center gap-1;
 }
 .footer-section-title{
-    @apply font-bold text-[20px] text-text font-bahnschrift
+    @apply font-bold text-[20px] text-softWhite font-bahnschrift
 }
 .footer-section-1 a{
-    @apply text-[14px] font-thin text-text hover:text-secondary
+    @apply text-[14px] font-thin text-softWhite hover:text-primary
 }
 .location{
     @apply text-wrap text-center
@@ -97,13 +97,13 @@
     @apply flex items-center  justify-center;
 }
 .footer-sub-2{
-    @apply flex w-[100%] md:w-[55rem] items-center mt-5 pt-5 justify-between border-t border-t-text md:flex-row flex-col gap-3
+    @apply flex w-[100%] md:w-[55rem] items-center mt-5 pt-5 justify-between border-t border-t-softWhite md:flex-row flex-col gap-3
 }
 .footer-icons{
     @apply flex items-center gap-1
 }
 .footer-icons a{
-    @apply p-2 rounded-full bg-text text-background hover:bg-secondary hover:text-background
+    @apply p-2 rounded-full bg-softWhite text-secondaryDark hover:bg-softWhite/50 hover:text-softWhite
 }
 .footer-icon{
     @apply text-[20px];
@@ -112,9 +112,9 @@
   @apply flex md:flex-row flex-col gap-1 items-center justify-center
 }
 .copyright {
-    @apply text-text text-[16px] flex items-center justify-center gap-1;
+    @apply text-softWhite text-[16px] flex items-center justify-center gap-1;
 }
 .main-copyright span{
-  @apply text-muted hover:text-secondary
+  @apply text-muted hover:text-muted/55
 }
 /* footer styling ends */

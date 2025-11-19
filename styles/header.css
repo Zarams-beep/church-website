@@ -1,12 +1,12 @@
 /* header 2 styling starts */
 .secondHeader {
-  @apply w-full fixed flex justify-center items-center py-3 border-b bg-background backdrop-blur-sm  text-text transition-all z-50;
+  @apply w-full fixed flex justify-center items-center py-3 border-b bg-secondaryDark backdrop-blur-sm  text-softWhite transition-all z-50;
 }
 .secondHeader .container{
   @apply flex items-center justify-between
 }
 .stickyIt {
-  @apply sticky top-0 w-full  border-b border-b-muted shadow-md bg-background;
+  @apply sticky top-0 w-full  border-b border-b-muted shadow-md bg-secondaryDark/90;
 }
 .header-logo-container {
   @apply flex gap-1 text-center justify-center w-full overflow-hidden;
@@ -18,7 +18,7 @@
   @apply md:w-[60px] w-[30px] md:h-[60px] h-[30px];
 }
 .header-logo-container h1 {
-  @apply lg:w-[20rem] font-bahnschrift text-center md:text-start text-text 
+  @apply lg:w-[20rem] font-bahnschrift text-center md:text-start text-softWhite 
 }
 .header-logo-container h1:hover, .header-logo-container h3:hover{
     @apply text-transparent bg-clip-text animate-gradientMove;
@@ -38,11 +38,11 @@
 }
 
 .navigatePages .nav-link{
-  @apply text-text no-underline font-bahnschrift text-[14px] md:text-[18px] hover:text-secondary;
+  @apply text-softWhite no-underline font-bahnschrift text-[14px] md:text-[18px] hover:text-primary;
 }
 
 .navigatePages .active, .active {
-  @apply text-secondary font-semibold;
+  @apply text-primary font-semibold;
 }
 /* header 2 styling ends */
 

@@ -2,28 +2,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import React from "react";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
-interface HeaderType {
-  id: number;
-  name: string;
-  path: string;
-  protected?: boolean;
-}
+import HeaderBarLinks from "./headerLinks";
+
 
 const HeaderBar2 = () => {
-  const pathname = usePathname();
   const [isSticky, setSticky] = useState(false);
   const [is580, setis580] = useState(false);
 
-  const links: HeaderType[] = [
-    { id: 1, name: "Home", path: "/" },
-    { id: 2, name: "About Us", path: "/about-us" },
-    { id: 3, name: "Semon", path: "/semon" },
-    { id: 4, name: "Community", path: "/community" },
-    { id: 5, name: "Contact", path: "/contact" },
-    
-  ];
+ 
 
   useEffect(() => {
     if (typeof window === "undefined") return;
@@ -64,17 +51,7 @@ const HeaderBar2 = () => {
           <section className="secondSection">
           {/* Desktop Navigation */}
           {!is580 && (
-            <div className="navigatePages">
-              {links.map((item) => (
-                <Link
-                  key={item.path}
-                href={item.path}
-                className={`nav-link ${pathname === item.path ? "active" : ""}`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+           <HeaderBarLinks/>
           )}
         </section>
          </div>
