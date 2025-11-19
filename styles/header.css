@@ -1,6 +1,6 @@
 /* header 2 styling starts */
 .secondHeader {
-  @apply w-full fixed flex justify-center items-center py-3 border-b bg-background backdrop-blur-sm  text-text transition-all z-50 mb-[4rem];
+  @apply w-full fixed flex justify-center items-center py-3 border-b bg-background backdrop-blur-sm  text-text transition-all z-50;
 }
 .secondHeader .container{
   @apply flex items-center justify-between

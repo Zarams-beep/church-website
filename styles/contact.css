@@ -3,10 +3,10 @@
     @apply flex flex-col w-full gap-0 overflow-x-hidden
 }
 .contactUs-form-section .container{
-    @apply flex items-start gap-10 mt-[6rem]
+    @apply flex items-start lg:flex-row flex-col gap-5 mt-[6rem]
 }
 .left-side-container{
-    @apply space-y-6 bg-softWhite rounded-lg py-4 px-6 w-[50rem] h-[40rem]
+    @apply space-y-6 bg-softWhite rounded-lg py-4 px-6 w-full lg:w-[50rem] h-auto lg:h-[40rem] overflow-hidden
 }
 .left-side-container header{
     @apply flex flex-col gap-3;
@@ -15,38 +15,35 @@
     @apply text-secondary font-semibold
 }
 .left-side-container h1{
-    @apply text-3xl font-bold text-muted;
+    @apply font-bold text-text;
 }
 .left-side-container p{
-    @apply text-muted/40 italic;
+    @apply text-muted italic;
 }
 .left-side-form {
     @apply flex flex-col gap-2;
 }
 .left-side-form-sub{
     @apply
-    grid grid-cols-2 gap-y-10 gap-x-4; 
+    grid grid-cols-2 gap-y-[3rem] gap-x-5; 
 }
 .contactUs-input, .contactUs-select, .contactUs-message{
-    @apply flex flex-col gap-1
+    @apply flex flex-col gap-2
 }
 .contactUs-input label, .contactUs-select label, .contactUs-message label{
-    @apply text-muted text-[16px] font-semibold
+    @apply text-text text-[16px] font-semibold
 }
 .contactUs-input input, .contactUs-message textarea{
-    @apply w-full p-2 rounded-lg outline-1 outline-muted shadow-md
+    @apply w-full p-2 rounded-lg outline-1 outline-muted shadow-md text-[14px] resize-none;
 }
 .contactUs-subject{
     @apply  flex flex-wrap gap-4
 }
 .contactUs-subject label{
-    @apply flex items-center gap-2 capitalize
+    @apply flex items-center gap-2 text-muted
 }
 .contactUs-subject label input{
     @apply hover:cursor-pointer
-}
-.error-gray-border{
-    @apply border border-[gray]
 }
 .error-red-border{
     @apply border border-[red]
@@ -58,11 +55,53 @@
     @apply text-[12px] text-[red]
 }
 .contactUs-submit-container{
-    @apply flex items-center justify-center my-3;
+    @apply flex items-center justify-center mt-[3rem];
 }
 .contactUs-submit-container button{
     @apply bg-secondary text-softWhite
 }
 .contact-right-side{
-    @apply space-y-8 rounded-lg py-4 px-6 w-[50rem] h-[40rem];
+    @apply space-y-8 rounded-lg py-4 px-6 w-full lg:w-[50rem] h-auto lg:h-[40rem] bg-softWhite overflow-hidden;
+}
+.right-side-image{
+    @apply w-full
+}
+.right-side-image img{
+    @apply w-full rounded-xl object-cover
+}
+.right-side-content{
+    @apply flex items-start justify-between sm:flex-row flex-col gap-y-4 gap-x-6
+}
+.right-side-sub{
+    @apply flex flex-col gap-y-6 w-full;
+}
+.email{
+    @apply flex items-center gap-2
+}
+.email button, .right-side-sub-2 .social-icons button{
+    @apply p-2 rounded-full bg-muted flex items-center justify-center text-softWhite
+}
+.email-icon{
+    @apply text-[16px] ;
+}
+.email div{
+    @apply flex items-start flex-col gap-1
+}
+.email div h6{
+    @apply text-[14px]
+}
+.email div a, .social-icons p{
+    @apply text-muted hover:underline hover:text-blue-700 text-[12px]
+}
+.right-side-sub-2{
+    @apply flex flex-col gap-y-2 w-full;
+}
+.right-side-sub-2 h6{
+    @apply text-[15px] font-semibold underline
+}
+.right-side-sub-2 .social-icons{
+    @apply flex flex-col gap-2;
+}
+.right-side-sub-2 .social-icons a{
+    @apply flex items-center gap-2;
 }
