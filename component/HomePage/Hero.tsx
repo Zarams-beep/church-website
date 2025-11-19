@@ -1,57 +1,66 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
-export default function HomepageHero() {
-  const [showFirst, setShowFirst] = useState(true);
+const slides = [
+  {
+    id: "first",
+    image:
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761134169/outreach-2_jpearc.jpg",
+  },
+  {
+    id: "second",
+    image:
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761134150/IMG_4703_vhfczx.jpg",
+  },
+  {
+    id: "third",
+    image:
+      "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: "fourth",
+    image:
+      "https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60",
+  },
+];
 
-  // Switch every 6 seconds instead of 10
+export default function HomepageHero() {
+  const [index, setIndex] = useState(0);
+
+  // Slow autoplay every 8 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
-      setShowFirst((prev) => !prev);
-    }, 60000);
-    return () => clearInterval(interval);
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 8000);
+    return () => clearInterval(id);
   }, []);
 
   return (
     <section className="hero-section">
-      <AnimatePresence mode="wait">
-        {showFirst ? (
+      {/* Background layer with crossfade */}
+      <div className="slide-viewport">
+        <AnimatePresence initial={false}>
           <motion.div
-            key="first"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.05 }}
+            key={slides[index].id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{
-              duration: 3,
-              ease: "easeInOut",
-            }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
             className="hero-section-bg"
             style={{
-              backgroundImage:
-                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761134169/outreach-2_jpearc.jpg')",
+              backgroundImage: `url(${slides[index].image})`,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
             }}
           />
-        ) : (
-          <motion.div
-            key="second"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.05 }}
-            exit={{ opacity: 0 }}
-            transition={{
-              duration: 3,
-              ease: "easeInOut",
-            }}
-            className="hero-section-bg"
-            style={{
-              backgroundImage:
-                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761134150/IMG_4703_vhfczx.jpg')",
-            }}
-          />
-        )}
-      </AnimatePresence>
+        </AnimatePresence>
+      </div>
 
       <div className="overlay" />
 
@@ -67,10 +76,14 @@ export default function HomepageHero() {
           <h6>Welcome to our Fellowship</h6>
           <h1>Become a Part of Our Community</h1>
           <h4>
-            Join us in worship, fellowship, and purpose. You are always welcome here.
+            Join us in worship, fellowship, and purpose. You are always welcome
+            here.
           </h4>
           <Link href="/about-us" className="btn-hero">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               Learn More
             </motion.button>
           </Link>

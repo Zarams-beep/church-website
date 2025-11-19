@@ -19,14 +19,17 @@
   background-position: center;
 }
 
+.slide-viewport {
+  @apply absolute inset-0 z-0 overflow-hidden;
+}
+
 .hero-section-bg {
-  @apply absolute inset-0 bg-cover bg-center z-0;
+  @apply absolute inset-0 bg-cover bg-center;
 }
 
 .overlay {
   @apply absolute inset-0 bg-black/40 z-10;
 }
-
 
 .overlay::after {
   content: "";
@@ -41,28 +44,37 @@
   background-repeat: no-repeat;
   z-index: 15;
 }
-.hero-section-2 .container{
-  @apply overflow-hidden
-}
-.hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] h-full py-[10rem] justify-center w-full ;
-}
-.hero-content h6{
-  @apply text-background
-}
-.hero-content h1{
-  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem] text-background;
+
+.hero-section-2 .container {
+  @apply overflow-hidden;
 }
 
-.hero-content h4{
-  @apply mb-4 text-background/50;
+.hero-content {
+  @apply relative z-10 flex flex-col gap-[5px] h-full py-[10rem] justify-center w-full;
 }
-.hero-content .btn-hero{
-  @apply w-[10rem] py-2  rounded-md bg-secondaryDark text-background
+
+.hero-content h6 {
+  @apply text-softWhite;
 }
-.hero-content .btn-hero button{
+
+.hero-content h1 {
+  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem] text-softWhite;
+}
+
+.hero-content h4 {
+  @apply mb-4 text-softWhite/50;
+}
+
+.hero-content .btn-hero {
+  @apply w-[10rem] py-2 rounded-md bg-secondaryDark text-softWhite;
+}
+
+.hero-content .btn-hero button {
   @apply self-center w-full;
 }
+
+/* hero styling ends */
+
 /* hero styling ends */
 
 /* mission and vision styling starts */
