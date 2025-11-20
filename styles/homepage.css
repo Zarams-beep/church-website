@@ -13,7 +13,7 @@
 
 /* hero styling starts */
 .hero-section {
-  @apply mt-[2rem] h-full relative overflow-hidden bg-[url('/Seekers_logo_colours_black_text.png')];
+  @apply h-full relative overflow-hidden bg-[url('/Seekers_logo_colours_black_text.png')];
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

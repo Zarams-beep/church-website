@@ -129,7 +129,7 @@ function VideoStage({
       {/* Video Section */}
       <div className="video-section">
         <video
-          key={videos[current]} // force re-render on change
+          key={videos[current]}
           className="story-video"
           autoPlay
           muted

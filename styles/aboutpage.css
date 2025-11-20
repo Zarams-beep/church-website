@@ -13,11 +13,18 @@
 
 /* hero styling starts */
 .hero-section {
-  @apply w-screen h-full relative overflow-hidden;     
+  @apply h-full relative overflow-hidden bg-[url('/Seekers_logo_colours_black_text.png')];
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;   
+}
+
+.slide-viewport {
+  @apply absolute inset-0 z-0 overflow-hidden;
 }
 
 .hero-section-bg{
-  @apply absolute inset-0 bg-cover bg-center z-0;
+  @apply absolute inset-0 bg-cover bg-center;
 }
 
 .overlay {
@@ -46,22 +53,22 @@
   @apply text-center;
 }
 .mission-verse span{
-  @apply font-semibold text-secondary
+  @apply font-semibold text-secondaryDark
 }
 .about-story-container .header-main-container{
   @apply justify-center items-center
 }
 .about-story-container .swiper-button-next::after,
 .about-story-container .swiper-button-prev::after {
-  @apply text-secondary text-[30px] md:text-[40px];
+  @apply text-secondaryDark text-[30px] md:text-[40px];
 }
 
 .about-story-container .swiper-pagination-bullet {
-  @apply bg-muted ;
+  @apply bg-secondaryDark ;
   opacity: 0.7;
 }
 .about-story-container .swiper-pagination-bullet-active {
-  @apply bg-secondary;
+  @apply bg-secondaryDark;
   opacity: 1;
 }
 .video-stage-container{
@@ -71,13 +78,10 @@
   @apply md:flex-row-reverse
 }
 .video-section{
-  @apply  w-[15rem] sm:w-[30rem] h-[20rem] relative
+  @apply  w-[15rem] sm:w-[30rem] h-[20rem] relative overflow-hidden
 }
 .video-section video{
-  @apply h-full w-full bg-muted rounded-md shadow-md;
-}
-.video-section video source{
-  @apply h-full w-full
+  @apply h-full w-full bg-secondaryDark rounded-md shadow-md object-cover;
 }
 .video-text-container{
   @apply flex flex-col gap-2 justify-center items-center
