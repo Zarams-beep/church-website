@@ -1,108 +1,92 @@
 "use client";
 
-import { motion, AnimatePresence} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect } from "react";
+
+const slides = [
+  {
+    id: "first",
+    image:
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767162/SOHK_001_jmowp7.jpg",
+  },
+  {
+    id: "second",
+    image:
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761805748/SOHK_038_xqndee.jpg",
+  },
+  {
+    id: "third",
+    image:
+      "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?w=600&auto=format&fit=crop&q=60",
+  },
+  {
+    id: "fourth",
+    image:
+      "https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60",
+  },
+];
 
 export default function HeroAbout() {
-  const [showFirst, setShowFirst] = useState(true);
+  const [index, setIndex] = useState(0);
 
-  useEffect(()=>{
-    const interval = setInterval(()=>{
-      setShowFirst((prev) => !prev);
-    }, 60000);
-    return () => clearInterval(interval)
-  },[])
+  // Slow autoplay every 8 seconds
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((prev) => (prev + 1) % slides.length);
+    }, 8000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <section className="hero-section">
+      {/* Background layer with crossfade */}
+      <div className="slide-viewport">
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={slides[index].id}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+            className="hero-section-bg"
+            style={{
+              backgroundImage: `url(${slides[index].image})`,
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+            }}
+          />
+        </AnimatePresence>
+      </div>
 
- <AnimatePresence mode="wait">
-        {showFirst ? (
-          <motion.div
-            key="first"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.05 }}
-            exit={{ opacity: 0 }}
-            transition={{
-              duration: 3,
-              ease: "easeInOut",
-            }}
-            className="hero-section-bg"
-            style={{
-              backgroundImage:
-                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761767162/SOHK_001_jmowp7.jpg')",
-            }}
-          />
-        ) : (
-          <motion.div
-            key="second"
-            initial={{ opacity: 0, scale: 1 }}
-            animate={{ opacity: 1, scale: 1.05 }}
-            exit={{ opacity: 0 }}
-            transition={{
-              duration: 3,
-              ease: "easeInOut",
-            }}
-            className="hero-section-bg"
-            style={{
-              backgroundImage:
-                "url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761805748/SOHK_038_xqndee.jpg')",
-            }}
-          />
-        )}
-      </AnimatePresence>
-      
       <div className="overlay" />
 
-      {/* Content */}
+      {/* Hero Content */}
       <div className="container">
         <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
-        viewport={{ amount: 0.3, once: false }}
-        className="hero-content"
-      >
-        <motion.h6
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className=""
+          transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
+          viewport={{ amount: 0.3, once: false }}
+          className="hero-content"
         >
-          Welcome to our Home
-        </motion.h6>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className=""
-        >
-          More than a church, a home.
-        </motion.h1>
-
-        <motion.h4
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className=""
-        >
-          We gather to worship, serve, and impact lives far beyond these walls.
-        </motion.h4>
-
-        <Link href="/join-us" className="btn-hero">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className=""
-          >
-            Join Us
-          </motion.button>
-        </Link></motion.div>
+          <h6>Welcome to our Home</h6>
+          <h1>More than a church, a home.</h1>
+          <h4>
+           We gather to worship, serve, and impact lives far beyond these walls.
+          </h4>
+          <Link href="/join-us" className="btn-hero">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Join Us
+            </motion.button>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );

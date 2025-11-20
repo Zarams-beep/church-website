@@ -67,16 +67,7 @@ export default function UpcomingSermon() {
                 >
                   WATCH AND LISTEN TO OUR SERMONS
                 </motion.h3>
-
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.4 }}
-                  viewport={{ amount: 0.3, once: false }}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
-                </motion.p>
+               
               </header>
 
               <div className="upcoming-content-section">

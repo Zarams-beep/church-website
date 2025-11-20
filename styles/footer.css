@@ -6,16 +6,16 @@
     @apply flex items-center justify-center overflow-hidden
 }
 .newsletter-container .mission-inner{
-  @apply bg-softWhite w-[90%] md:w-[40rem] p-10 rounded-lg border-b-[5px] border-b-secondary shadow-lg relative
+  @apply bg-softWhite w-[90%] md:w-[40rem] p-10 rounded-lg border-b-[5px] border-b-secondaryDark shadow-lg relative
 }
 .newsletter-container .mission-inner .quote{
-  @apply absolute text-[6rem] sm:text-[10rem] text-secondary/5 right-0
+  @apply absolute text-[6rem] sm:text-[10rem] text-secondaryDark/5 right-0
 }
 .newsletter-container header{
   @apply flex flex-col ;
 }
 .newsletter-container header h2{
-  @apply text-text font-bahnschrift
+  @apply text-secondaryDark font-bahnschrift
 }
 .newsletter-container p{
   @apply text-muted
@@ -31,7 +31,7 @@
 }
 
 .newsletter-button {
-  @apply px-5 py-3 outline-none border-none  bg-secondary text-text cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
+  @apply px-5 py-3 outline-none border-none  bg-secondaryDark text-softWhite cursor-pointer md:rounded-none rounded-lg md:rounded-tr-[5px] md:rounded-br-[5px] text-[16px] w-full md:w-[8rem];
 }
 
 .newsletter-container .newsletter-error {

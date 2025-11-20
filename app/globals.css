@@ -18,7 +18,7 @@
 
 /* body styling starts */
 body {
-  @apply w-full overflow-x-hidden relative bg-background text-text;
+  @apply w-full overflow-x-hidden relative bg-softWhite text-text;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 .container {
