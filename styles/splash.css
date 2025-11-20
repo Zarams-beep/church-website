@@ -1,5 +1,5 @@
 .splash {
-  @apply fixed inset-0 bg-background flex flex-col items-center justify-center z-[999] px-6;
+  @apply fixed inset-0 bg-softWhite flex flex-col items-center justify-center z-[999] px-6;
 }
 
 .logo-container {
@@ -15,7 +15,7 @@
 }
 
 .text-container h1{
-    @apply text-2xl md:text-4xl font-bahnschrift text-secondary
+    @apply text-2xl md:text-4xl font-bahnschrift text-secondaryDark
 }
 
 .text-container p{
