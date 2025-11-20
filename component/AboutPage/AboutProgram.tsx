@@ -16,25 +16,25 @@ const programs = [
     day: "Wednesday",
     title: "Prayer Meeting",
     description: "A time of collective prayer and intercession for personal, church, and global needs.",
-    images:'https://res.cloudinary.com/dhifpki0r/image/upload/v1761133981/SOHK_003_ktskpr.jpg'
+    images:'https://images.unsplash.com/photo-1562203221-84a4acfddcd8?w=600&auto=format&fit=crop&q=60'
   },
   {
     day: "Saturday",
     title: "Leadership Clinic",
     description: "Equipping members with leadership and mentoring skills for spiritual and life growth.",
-    images:'https://res.cloudinary.com/dhifpki0r/image/upload/v1761133981/SOHK_003_ktskpr.jpg'
+    images:'https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60'
   },
   {
     day: "Saturday",
     title: "Relationship Clinic",
     description: "A special session to discuss Godly relationships, marriage, and personal development.",
-    images:'https://res.cloudinary.com/dhifpki0r/image/upload/v1761133981/SOHK_003_ktskpr.jpg'
+    images:'https://res.cloudinary.com/dhifpki0r/image/upload/v1761767237/SOHK_036_hrweoj.jpg'
   },
   {
     day: "Sunday",
     title: "Testimonies & Trivia",
     description: "Celebrating God’s faithfulness through testimonies, fun, and engaging trivia.",
-    images:'https://res.cloudinary.com/dhifpki0r/image/upload/v1761133981/SOHK_003_ktskpr.jpg'
+    images:'https://images.unsplash.com/photo-1605460375648-278bcbd579a6?w=600&auto=format&fit=crop&q=60'
   },
 ];
 
@@ -86,7 +86,7 @@ export default function Programs() {
               whileTap={{ scale: 0.98 }}
             >
                 <div className="program-img-container">
-                    <Image src={program.images} alt={program.title} width={200} height={200} quality={100}/>
+                    <Image src={program.images} alt={program.title} width={300} height={300} quality={100}/>
                 </div>
               <h3 className="program-name">{program.title}</h3>
               <p className="">{program.day}</p>

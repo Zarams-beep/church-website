@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { RiTeamLine } from "react-icons/ri";
 
 interface TeamMember {
@@ -61,36 +61,44 @@ const teamMembers: TeamMember[] = [
     name: "Brother David Ojo",
     title: "Head of SGIT Unit",
     department: "SGIT",
-    image: "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg",
+    image: "https://res.cloudinary.com/dhifpki0r/image/upload/v1761134150/IMG_4703_vhfczx.jpg",
     summary:
       "SGIT (Seekers Growth & Impact Team) drives innovation, digital evangelism, and strategic growth within the ministry.",
     members: 12,
-    gallery: ["https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg", "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg"],
+    gallery: ["https://res.cloudinary.com/dhifpki0r/image/upload/v1761134150/IMG_4703_vhfczx.jpg", "https://res.cloudinary.com/dhifpki0r/image/upload/v1761134169/outreach-2_jpearc.jpg"],
   },
   {
     name: "Sister Faith Olamide",
     title: "Head of SMAT Unit",
     department: "SMAT",
-    image: "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg",
+    image: "https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60",
     summary:
       "SMAT (Seekers Media and Tech) captures every moment through creativity, design, and technology for the Kingdom.",
     members: 8,
-    gallery: ["https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg"],
+    gallery: ["https://images.unsplash.com/photo-1605460375648-278bcbd579a6?w=600&auto=format&fit=crop&q=60"],
   },
   {
     name: "Brother Kingsley Obi",
     title: "Head of Admin Unit",
     department: "Admin",
-    image: "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg",
+    image: "https://res.cloudinary.com/dhifpki0r/image/upload/v1761805748/SOHK_038_xqndee.jpg",
     summary:
       "Oversees administrative operations, ensuring all ministry activities are coordinated smoothly and effectively.",
     members: 6,
-    gallery: ["https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg"],
+    gallery: ["https://res.cloudinary.com/dhifpki0r/image/upload/v1761767162/SOHK_001_jmowp7.jpg"],
   },
 ];
 
 export default function TeamSection() {
   const [selected, setSelected] = useState<TeamMember | null>(null);
+
+  useEffect(() => {
+  if (selected) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [selected]);
 
   return (
     <section className="team-section" id="team">
@@ -163,12 +171,6 @@ export default function TeamSection() {
                 transition={{ duration: 0.3 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <button
-                  onClick={() => setSelected(null)}
-                  className="close-btn"
-                >
-                  ✕
-                </button>
 <div className="sub-content-modal">
 <Image
                   src={selected.image}

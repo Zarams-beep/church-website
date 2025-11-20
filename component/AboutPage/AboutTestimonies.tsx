@@ -35,7 +35,7 @@ const testimonies = [
 export default function TestimoniesSection() {
   const [index, setIndex] = useState(0);
 
-  // ✅ Auto slide every 7 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonies.length);
@@ -50,7 +50,7 @@ export default function TestimoniesSection() {
   const active = testimonies[index];
 
   return (
-    <section className="testimonies-section " id="testimonies">
+    <section className="testimonies-section" id="testimonies">
       <div className="container">
         {/* Header */}
         <motion.div
@@ -79,7 +79,6 @@ export default function TestimoniesSection() {
           transition={{ duration: 0.6 }}
           className="testimonies-grid"
         >
-          <RiDoubleQuotesL className="quote-icon" />
           <div className="testimonies-phrase">
             <div className="test-img-container">
               <Image

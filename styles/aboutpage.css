@@ -44,7 +44,7 @@
   width: 100%;
   height: 60px;
   margin-bottom: -.2rem;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%238e4d9c'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%2344284a'/%3E%3C/svg%3E");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
@@ -99,7 +99,7 @@
 
 /* program styling starts */
 .program-section {
-  @apply bg-secondary relative overflow-hidden pb-[4rem] pt-[1rem] h-full
+  @apply bg-secondaryDark relative overflow-hidden pb-[6rem] pt-[1rem] h-full
 }
 .program-section::after {
   content: "";
@@ -109,7 +109,7 @@
   width: 100%;
   height: 60px;
   margin-bottom: -0.3rem;
-  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fefae0'/></svg>");
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fffdf3'/></svg>");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 15;
@@ -124,28 +124,28 @@
   @apply grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-5 mt-10
 }
 .program-card{
-  @apply bg-softWhite text-neutral-500 flex items-center gap-5 rounded-md shadow-md flex-col gap-y-2 pb-6;
+  @apply bg-softWhite text-muted flex items-center gap-5 rounded-md shadow-md flex-col gap-y-2 pb-6;
 }
 .program-img-container{
-  @apply w-full h-[22rem] 
+  @apply w-full h-[16rem] 
 }
 .program-img-container img{
-  @apply w-full h-full rounded-t-md
+  @apply w-full h-full object-cover rounded-t-md
 }
 .program-card p:first-child{
-  @apply text-muted text-sm italic
+  @apply text-secondaryDark text-sm italic
 }
 .program-card p:last-child{
-  @apply text-gray-700 text-sm leading-relaxed text-center
+  @apply text-text text-sm leading-relaxed text-center
 }
  .hoveredIt,.hoveredIt .sub-depart-card p,.hoveredIt .sub-depart-card h3{
-  @apply bg-neutral-500 text-softWhite;
+  @apply bg-muted text-softWhite;
 }
 .sub-depart-card{
   @apply flex flex-col md:items-start items-center md:justify-start justify-center;
 }
 .sub-depart-card p, .sub-depart-card h3{
-  @apply md:text-start text-center text-neutral-500
+  @apply md:text-start text-center text-muted
 }
 .program-icon{
   @apply h-full flex items-center justify-center
@@ -157,16 +157,30 @@
 
 /*Testimonies styling starts*/
 .testimonies-section {
-  @apply relative overflow-hidden pb-[4rem] pt-[1rem] h-full m-auto
+  @apply relative overflow-hidden pb-[4rem] pt-[1rem] h-full m-auto;
 }
+.testimonies-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%2344284a'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+
 .testimonies-section .mission-icon, .testimonies-section .mission-title , .testimonies-section .mission-verse{
   @apply text-center
 }
 .testimonies-grid{
-  @apply flex flex-col gap-2  mt-5 bg-white p-8 rounded-2xl shadow-md ;
+  @apply flex flex-col gap-2  mt-5 p-8  ;
 }
 .testimonies-phrase{
-  @apply flex items-center justify-between gap-2 relative md:flex-row flex-col
+  @apply flex items-center justify-between gap-5 relative md:flex-row flex-col
 }
 .test-img-container{
   @apply relative w-full h-full  
@@ -199,15 +213,20 @@
 
 /* Team styling starts */
 .team-section {
-  @apply py-20 bg-neutral-50 relative overflow-hidden;
+  @apply pb-[4rem] pt-[1rem] bg-secondaryDark overflow-hidden;
 }
-
+.team-section .mission-title, .team-section .mission-icon{
+  @apply text-softWhite
+}
+.team-section .mission-verse{
+  @apply text-softWhite/80
+}
 .team-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 overflow-hidden;
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12 overflow-hidden relative;
 }
 
 .team-card {
-  @apply bg-softWhite shadow-lg rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ;
+  @apply bg-softWhite shadow-lg rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 relative;
 }
 
 .team-image {
@@ -219,24 +238,24 @@
 }
 
 .team-name {
-  @apply text-xl font-semibold text-muted;
+  @apply text-xl font-semibold text-secondaryDark;
 }
 
 .team-title {
-  @apply text-sm text-secondary;
+  @apply text-sm text-muted;
 }
 
+.team-department{
+  @apply text-text
+}
 .team-modal-backdrop {
-  @apply inset-0 bg-black/60 flex justify-center items-center z-10 absolute;
+  @apply inset-0 bg-black/60 flex justify-center items-center fixed py-10 z-[40];
 }
 
 .team-modal-content {
-  @apply bg-softWhite p-6 rounded-2xl shadow-2xl w-[90%] max-w-3xl relative;
+  @apply mt-[5rem] bg-softWhite p-6 rounded-2xl shadow-2xl w-[90%] max-w-3xl h-[30rem] overflow-y-auto ;
 }
 
-.close-btn {
-  @apply absolute top-3 right-3 text-gray-500 hover:text-secondary text-2xl;
-}
 .sub-content-modal{
   @apply flex md:flex-row flex-col gap-3 items-start;
 }
