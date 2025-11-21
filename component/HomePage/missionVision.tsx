@@ -3,9 +3,16 @@
 import { motion } from "framer-motion";
 import { FaPrayingHands, FaBookOpen, FaHeart } from "react-icons/fa";
 import { GoGoal } from "react-icons/go";
+import { IconType } from "react-icons";
+
+export type MissionItem = {
+  icon: IconType;
+  title: string;
+  description: string;
+};
 
 export default function MissionSection() {
-  const missionItems = [
+  const missionItems:MissionItem[] = [
     {
       icon: FaPrayingHands,
       title: "Faith & Worship",

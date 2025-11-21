@@ -5,7 +5,14 @@ import { motion } from "framer-motion";
 import { RiMic2Fill, RiDoubleQuotesL } from "react-icons/ri";
 import { FaArrowRightLong, FaArrowLeftLong } from "react-icons/fa6";
 
-const testimonies = [
+export type Testimony = {
+  name: string;
+  role: string;
+  testimony: string;
+  image: string;
+};
+
+const testimonies: Testimony[]= [
   {
     name: "Sarah O.",
     role: "Member, Worship Team",

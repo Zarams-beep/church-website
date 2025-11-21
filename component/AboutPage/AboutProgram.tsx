@@ -4,7 +4,16 @@ import { motion } from "framer-motion";
 import { MdOutlineEmojiPeople } from "react-icons/md";
 import { useState } from "react";
 import Image from "next/image";
-const programs = [
+
+export type Program = {
+  day: string;
+  title: string;
+  description: string;
+  images: string;
+};
+
+
+const programs:Program[] = [
   {
     day: "Monday / Tuesday / Thursday",
     title: "Daily Bible Study",

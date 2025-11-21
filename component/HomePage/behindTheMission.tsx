@@ -5,7 +5,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { LiaSeedlingSolid } from "react-icons/lia";
-const seedJourney = [
+
+export type SeedStage = {
+  images: string[];
+  note: string;
+  description: string;
+};
+
+const seedJourney:SeedStage[] = [
   {
     images: [
       "https://images.unsplash.com/photo-1543525238-54e3d131f7ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjV8fGNodXJjaHxlbnwwfHwwfHx8MA%3D%3D",
