@@ -124,7 +124,7 @@ export default function FormContact() {
               <div className="contactUs-select">
                 <label>Select Subject</label>
                 <div className="contactUs-subject">
-                  {["General", "Report", "Comment", "Suggestion"].map((value) => (
+                  {["General", "Support", "Comment", "Suggestion"].map((value) => (
                     <label key={value}>
                       <input type="radio" value={value} {...register("subject")} />
                       {value}

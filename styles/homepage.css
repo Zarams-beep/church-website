@@ -58,7 +58,7 @@
 }
 
 .hero-content h1 {
-  @apply text-[40px] sm:text-[60px] w-full sm:w-[40rem] text-softWhite;
+  @apply text-[40px] sm:text-[60px] text-softWhite;
 }
 
 .hero-content h4 {

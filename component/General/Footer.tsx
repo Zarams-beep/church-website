@@ -25,7 +25,6 @@ const Footer = () => {
             className="image-footer"
           />
           </div>
-          <h3 className="footer-section-title">Seekers of His Kingdom</h3>
         </section>
 
         <section className="footer-section-1">

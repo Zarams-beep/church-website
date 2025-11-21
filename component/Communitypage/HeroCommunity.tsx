@@ -8,26 +8,26 @@ const slides = [
   {
     id: "first",
     image:
-      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767162/SOHK_001_jmowp7.jpg",
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767825/SOHK_031_zoioyp.jpg",
   },
   {
     id: "second",
     image:
-      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761805748/SOHK_038_xqndee.jpg",
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767237/SOHK_036_hrweoj.jpg",
   },
   {
     id: "third",
     image:
-      "https://images.unsplash.com/photo-1605460375648-278bcbd579a6?w=600&auto=format&fit=crop&q=60",
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767854/SOHK_001_qxnzan.jpg",
   },
   {
     id: "fourth",
     image:
-      "https://images.unsplash.com/photo-1630467267476-c67b34ffc837?w=600&auto=format&fit=crop&q=60",
+      "https://res.cloudinary.com/dhifpki0r/image/upload/v1761767859/SOHK_030_vbhhqd.jpg",
   },
 ];
 
-export default function HeroAbout() {
+export default function CommunityUs() {
   const [index, setIndex] = useState(0);
 
   // Slow autoplay every 8 seconds
@@ -73,17 +73,19 @@ export default function HeroAbout() {
           viewport={{ amount: 0.3, once: false }}
           className="hero-content"
         >
-          <h6>Welcome to our Home</h6>
-          <h1>More than a church, a home.</h1>
-          <h4>
-           We gather to worship, serve, and impact lives far beyond these walls.
-          </h4>
-          <Link href="/community" className="btn-hero">
+          <h6>Welcome to our Community</h6>
+<h1>A family bound by faith, love, and purpose.</h1>
+<h4>
+  More than a gathering, we are a people growing together in Christ,
+  strengthening one another, and reaching hearts beyond these walls.
+</h4>
+
+          <Link href="/about-us" className="btn-hero">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Join Us
+              About Us
             </motion.button>
           </Link>
         </motion.div>
