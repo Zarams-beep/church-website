@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest} from "next/server";
 import connect from "@/utils/db";
-import Conferences from "@/modal/Conferences";
+import Category from "@/modal/Category";
 
 export const GET = async (request: NextRequest) => {
     const url = new URL(request.url);
@@ -8,7 +8,7 @@ export const GET = async (request: NextRequest) => {
 
     try {
         await connect();
-        const conferences = await Conferences.find(title?{title}:{});
+        const conferences = await Category.find(title?{title}:{});
 
         return new NextResponse(JSON.stringify(conferences), {status: 200});
     } catch (error) {

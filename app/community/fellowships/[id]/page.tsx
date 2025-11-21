@@ -1,13 +1,13 @@
 import { NextResponse, NextRequest } from "next/server";
 import connect from "@/utils/db"
-import Fellowships from "@/modal/Fellowships";
+import Category from "@/modal/Category";
 
 export const GET = async (request: NextRequest,context:{params:Promise<{id:string}>}) => {
     const {id} = await context.params;
 
     try{
         await connect();
-        const fellowships = await Fellowships.findById(id);
+        const fellowships = await Category.findById(id);
 
         return NextResponse.json(fellowships, {status:200});
     } catch(err){
