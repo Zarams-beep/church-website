@@ -33,22 +33,13 @@ export default function CommunityAlbum() {
       try {
         setLoading(true);
         setError(null);
-        
-        const url = `/community/api?category=${selectedCategory}`;
-        console.log("Fetching from:", url);
-        
-        const res = await fetch(url);
+        const res = await fetch(`/community/api?category=${selectedCategory}`);
         
         if (!res.ok) {
-          const errorText = await res.text();
-          console.error("Response not OK:", res.status, errorText);
           throw new Error("Failed to fetch community items");
         }
         
         const data = await res.json();
-        console.log("Received data:", data);
-        console.log("Data length:", data.length);
-        
         setCommunityItems(data);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
@@ -117,21 +108,22 @@ export default function CommunityAlbum() {
             ))}
           </div>
 
-          {/* SHOW ITEMS WHEN CATEGORY IS SELECTED */}
+        
           {selectedCategory && (
             <>
               {/* BACK BUTTON */}
-              <div className="my-8">
+              <div className="back-wrapper">
+              <h3 className="">{selectedCategory}</h3>
                 <button
                   onClick={() => {
                     setSelectedCategory(null);
                     setSearch("");
                   }}
-                  className="text-sm opacity-70 hover:opacity-100"
+                  className=""
                 >
                   ← Back to Categories
                 </button>
-                <h3 className="text-2xl font-bold mt-4">{selectedCategory}</h3>
+
               </div>
 
               {/* SEARCH BAR */}
