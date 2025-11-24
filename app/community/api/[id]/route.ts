@@ -4,13 +4,12 @@ import { Types } from "mongoose";
 
 export async function GET(
   req: Request,
-  { params }: { params: { id: string } }
+  context: { params: Promise<{ id: string }> }
 ) {
   await connect();
 
-  const { id } = params;
+  const { id } = await context.params;
 
-  // Check if it's an ObjectId or slug
   const isObjectId = Types.ObjectId.isValid(id);
 
   const data = isObjectId
