@@ -1,7 +1,15 @@
 export type CommunityItem = {
-    image:string;
-    title:string;
-    description:string;
-    date:string;
-    linkpage:string;
-}
+  _id: string;
+  image: string;
+  title: string;
+  description: string;
+  date: string;
+  slug: string;
+  category: 
+    | "Retreats"
+    | "Fellowships"
+    | "Conferences"
+    | "Workshops"
+    | "Outreaches"
+    | "Celebrations";
+};

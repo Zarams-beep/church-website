@@ -11,12 +11,12 @@ interface CommunityAlbumProps {
 }
 
 const communityTitle: CommunityAlbumProps[] = [
-  { title: "Retreats", links: "/community/retreats" },
-  { title: "Fellowships", links: "/community/fellowships" },
-  { title: "Conferences", links: "/community/conferences" },
-  { title: "Workshops", links: "/community/workshops" },
-  { title: "Outreaches", links: "/community/outreaches" },
-  { title: "Celebrations", links: "/community/celebrations" },
+  { title: "Retreats", links: "/community/api/retreats" },
+  { title: "Fellowships", links: "/community/api/fellowships" },
+  { title: "Conferences", links: "/community/api/conferences" },
+  { title: "Workshops", links: "/community/api/workshops" },
+  { title: "Outreaches", links: "/community/api/outreaches" },
+  { title: "Celebrations", links: "/community/api/celebrations" },
 ];
 
 export default function CommunityAlbum() {

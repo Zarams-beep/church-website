@@ -1,0 +1,35 @@
+/* general styling starts */
+.community-section{
+  @apply flex flex-col w-full gap-0 overflow-x-hidden
+}
+.parellex-scrolling {
+  @apply bg-[url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761767825/SOHK_031_zoioyp.jpg')] w-full;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  /* min-height: 100vh; */
+}
+/* general styling ends */
+
+/*community styling starts*/
+.community-album-container{
+  @apply relative overflow-hidden w-full  pb-[4rem];
+}
+.community-album-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'%3E%3Cpath d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%2344284a'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.community-album-container .container{
+  @apply overflow-hidden
+}
+
+/*community styling ends*/
