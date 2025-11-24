@@ -153,7 +153,7 @@ export default function CommunityAlbum() {
 
               {/* ITEMS GRID */}
               {!loading && !error && (
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+                <div className="grid-community-container">
                   {filteredItems.length > 0 ? (
                     filteredItems.map((item, index) => (
                       <motion.div
@@ -164,29 +164,30 @@ export default function CommunityAlbum() {
                       >
                         <Link
                           href={`/community/${selectedCategory.toLowerCase()}/${item.slug}`}
-                          className="block border rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+                          className=""
                         >
                           <img
                             src={item.image}
                             alt={item.title}
-                            className="w-full h-48 object-cover"
+                            className=""
                           />
-                          <div className="p-4">
-                            <h4 className="font-semibold text-lg">
+                          <div className="grid-item-info">
+                            <h4 className="">
                               {item.title}
                             </h4>
-                            <p className="text-sm opacity-70 mt-2 line-clamp-2">
+                            <p className="">
                               {item.description}
                             </p>
-                            <p className="text-xs opacity-50 mt-3">
+                            <p className="">
                               {new Date(item.date).toLocaleDateString()}
                             </p>
                           </div>
                         </Link>
                       </motion.div>
                     ))
+                    
                   ) : (
-                    <p className="col-span-full text-center text-sm opacity-60">
+                    <p className="">
                       No items found
                     </p>
                   )}
