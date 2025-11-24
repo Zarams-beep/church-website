@@ -31,5 +31,37 @@
 .community-album-container .container{
   @apply overflow-hidden
 }
-
+.community-search-wrapper{
+  @apply w-full flex mb-6
+}
+.community-search-input{
+  @apply w-full px-4 py-2 border border-muted rounded-md focus:outline-none focus:ring-1 focus:ring-secondaryDark transition
+}
+.loading-state, .error-state{
+  @apply text-center py-12
+}
+.loading-state p{
+  @apply text-lg opacity-70
+}
+.error-state p{
+  @apply text-red-500
+}
+.community-album-grid{
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6
+}
+.community-album-card{
+  @apply bg-secondaryDark text-softWhite rounded-lg shadow-md overflow-hidden hover:shadow-xl transition hover:bg-softWhite hover:text-secondaryDark
+}
+.community-album-grid .active{
+  @apply bg-softWhite text-secondaryDark font-semibold
+}
+.back-wrapper{
+  @apply flex justify-between mt-10 mb-3
+}
+.back-wrapper h3{
+  @apply text-lg md:text-2xl font-bold
+}
+.back-wrapper button{
+  @apply text-sm opacity-70 hover:opacity-100 transition
+}
 /*community styling ends*/
