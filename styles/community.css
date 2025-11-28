@@ -89,3 +89,12 @@
   @apply col-span-full text-center text-sm opacity-60;
 }
 /*community styling ends*/
+
+/*community slug styling starts*/
+.community-main-items-container{
+  @apply pt-[6rem]
+}
+.community-items-container{
+  @apply flex flex-col w-full gap-5
+}
+/*community slug styling ends*/

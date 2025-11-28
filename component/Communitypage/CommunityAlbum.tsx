@@ -33,7 +33,7 @@ export default function CommunityAlbum() {
       try {
         setLoading(true);
         setError(null);
-        const res = await fetch(`/community/api?category=${selectedCategory}`);
+        const res = await fetch(`http://localhost:3000/community/api?category=${selectedCategory}`);
         
         if (!res.ok) {
           throw new Error("Failed to fetch community items");
@@ -162,7 +162,8 @@ export default function CommunityAlbum() {
                         transition={{ delay: index * 0.1 }}
                       >
                         <Link
-                          href={`/community/${selectedCategory.toLowerCase()}/${item.slug}`}
+                          href={`/community/${selectedCategory}/${item.slug}`}
+                          key={item.slug}
                           className=""
                         >
                           <img
@@ -199,3 +200,6 @@ export default function CommunityAlbum() {
     </div>
   );
 }
+
+
+

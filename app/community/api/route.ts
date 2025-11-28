@@ -8,6 +8,7 @@ export async function GET(req: Request) {
 
     const { searchParams } = new URL(req.url);
     const category = searchParams.get("category");
+    
     const search = searchParams.get("search");
 
     console.log("=== API CALLED ===");
