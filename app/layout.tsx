@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     images: [
       {
-        url: `${SITE_URL}/`,
+        url: `${SITE_URL}/Seekers_logo_colours.ico`,
         width: 1200,
         height: 630,
         alt: SITE_NAME,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     creator: TWITTER_HANDLE,
     images: [
       {
-        url: `${SITE_URL}/`,
+        url: `${SITE_URL}/Seekers_logo_colours.ico`,
         alt: SITE_NAME,
       },
     ],
@@ -57,9 +57,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/" },
-      { url: "/", sizes: "16x16", type: "image/png" },
-      { url: "/", sizes: "32x32", type: "image/png" },
+      { url: "/Seekers_logo_colours.ico" },
+      { url: "/Seekers_logo_colours.ico", sizes: "16x16", type: "image/png" },
+      { url: "/Seekers_logo_colours.ico", sizes: "32x32", type: "image/png" },
     ],
     apple: [{ url: "/" }],
   },
