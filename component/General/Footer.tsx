@@ -45,9 +45,7 @@ const Footer = () => {
 
         <section className="footer-section-1">
           <h5 className="footer-section-title">Contact Us</h5>
-          <a href="#" className="location">
-           Virtual
-          </a>
+          
           <a href="tel:+23481502332712">+23481502332712</a>
           <a href="mailto:seekersofhiskingdomglobal@gmail.com">seekersofhiskingdomglobal@gmail.com</a>
         </section>
