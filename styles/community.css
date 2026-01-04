@@ -2,7 +2,7 @@
 .community-section{
   @apply flex flex-col w-full gap-0 overflow-x-hidden
 }
-.parellex-scrolling {
+.community-section .parellex-scrolling {
   @apply bg-[url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761767825/SOHK_031_zoioyp.jpg')] w-full;
   background-attachment: fixed;
   background-size: cover;

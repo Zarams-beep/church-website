@@ -2,7 +2,7 @@
 .homepage-main{
   @apply flex flex-col w-full gap-0 overflow-x-hidden
 }
-.parellex-scrolling {
+.homepage-main .parellex-scrolling {
   @apply bg-[url('https://res.cloudinary.com/dhifpki0r/image/upload/v1761134154/outreach-1_epgoiv.jpg')] w-full;
   background-attachment: fixed;
   background-size: cover;
