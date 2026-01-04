@@ -117,7 +117,7 @@
   z-index: 15;
 }
 .impact-stats-section .container{
-  @apply pb-[5rem] flex flex-col gap-8 pt-2an
+  @apply pb-[5rem] flex flex-col gap-8 pt-2
 }
 
 .impact-title {
