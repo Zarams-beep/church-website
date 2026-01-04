@@ -39,21 +39,32 @@ export default function FormContact() {
     }
   }, [watchedFields]);
 
-  const onSubmit = async (data: ContactUsFormData) => {
-    setLoading(true);
-    setErrorMessage(null);
-    setSuccessMessage(null);
+const onSubmit = async (data: ContactUsFormData) => {
+  setLoading(true);
+  setErrorMessage(null);
+  setSuccessMessage(null);
 
-    try {
-      // 🔹 Placeholder for future Nodemailer API call
-      setSuccessMessage("Your message has been sent successfully!");
-      reset();
-    } catch (error) {
-      setErrorMessage("Failed to send message. Please try again.");
-    } finally {
-      setLoading(false);
+  try {
+    const response = await fetch('/api/send-email', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to send email');
     }
-  };
+
+    setSuccessMessage("Your message has been sent successfully!");
+    reset();
+  } catch (error) {
+    setErrorMessage("Failed to send message. Please try again.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="contactUs-form-section">
