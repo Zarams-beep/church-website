@@ -98,3 +98,83 @@
   @apply flex flex-col w-full gap-5
 }
 /*community slug styling ends*/
+
+/*impact stat styling starts*/
+.impact-stats-section {
+  @apply bg-secondaryDark relative overflow-hidden  pt-[1rem] h-full mb-3;
+}
+.impact-stats-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  margin-bottom: -0.3rem;
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 100' preserveAspectRatio='none'><path d='M790.5,93.1c-59.3-5.3-116.8-18-192.6-50c-29.6-12.7-76.9-31-100.5-35.9c-23.6-4.9-52.6-7.8-75.5-5.3 c-10.2,1.1-22.6,1.4-50.1,7.4c-27.2,6.3-58.2,16.6-79.4,24.7c-41.3,15.9-94.9,21.9-134,22.6C72,58.2,0,25.8,0,25.8V100h1000V65.3 c0,0-51.5,19.4-106.2,25.7C839.5,97,814.1,95.2,790.5,93.1z' fill='%23fffdf3'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 15;
+}
+.impact-stats-section .container{
+  @apply pb-[5rem] flex flex-col gap-8 pt-2an
+}
+
+.impact-title {
+  @apply text-softWhite font-bahnschrift font-bold text-[2rem] text-center;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.impact-card {
+  @apply bg-softWhite rounded-[12px] px-[2.2rem] py-[1.4rem] text-center shadow-md flex flex-col items-center justify-center gap-1;
+}
+
+.impact-card h3 {
+  @apply text-secondaryDark font-semibold text-[2rem];
+}
+
+.impact-card p {
+  opacity: 0.7;
+}
+
+/*impact stat styling ends*/
+
+/*donation styling starts*/
+.donation-section {
+  @apply bg-softWhite 
+}
+
+.donation-card {
+  @apply pb-[2rem] pt-2 text-center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.donation-card h2 {
+  @apply text-[2rem] mb-[1rem];
+}
+
+.donation-card p {
+  opacity: 0.85;
+  margin-bottom: 2rem;
+}
+
+.donation-actions {
+  @apply flex gap-4 justify-center flex-wrap;
+}
+.donation-actions a{
+  @apply rounded-[999px] px-[2rem] py-3 font-[600];
+}
+.donate-btn {
+  @apply bg-secondaryDark hover:bg-secondary cursor-pointer text-softWhite;
+}
+
+.secondary-btn {
+  @apply border border-secondaryDark hover:border-secondary text-secondaryDark hover:text-secondary cursor-pointer;
+}
+/*donation styling ends*/
