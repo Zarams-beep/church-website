@@ -17,10 +17,12 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
+  height: 100vh;
 }
 
 .slide-viewport {
-  @apply absolute inset-0 z-0 overflow-hidden;
+  @apply absolute inset-0 z-0;
 }
 
 .hero-section-bg {
@@ -28,7 +30,7 @@
 }
 
 .overlay {
-  @apply absolute inset-0 bg-black/40 z-10 overflow-hidden;
+  @apply absolute inset-0 bg-black/40 z-10;
 }
 
 .overlay::after {
@@ -45,12 +47,12 @@
   z-index: 15;
 }
 
-.hero-section-2 .container {
+.hero-section .container {
   @apply overflow-hidden;
 }
 
 .hero-content {
-  @apply relative z-10 flex flex-col gap-[5px] py-[10rem] justify-center w-full overflow-hidden;
+  @apply relative z-10 flex flex-col gap-[5px] py-[10rem] justify-center w-full overflow-hidden h-full;
 }
 
 .hero-content h6 {

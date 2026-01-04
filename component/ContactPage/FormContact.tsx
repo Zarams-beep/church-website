@@ -209,7 +209,7 @@ const onSubmit = async (data: ContactUsFormData) => {
                 </button>
                 <div>
                   <h6>Phone</h6>
-                  <Link href="tel:+234123456789">+234 123 456 789</Link>
+                  <Link href="tel:+23481502332712">+23481502332712</Link>
                 </div>
               </div>
 
@@ -224,7 +224,7 @@ const onSubmit = async (data: ContactUsFormData) => {
                     href="https://www.google.com/maps/place/Victoria+Island,+Lagos,+Nigeria"
                     target="_blank"
                   >
-                    Victoria Island, Lagos
+                   Virtual
                   </Link>
                 </div>
               </div>
@@ -234,25 +234,26 @@ const onSubmit = async (data: ContactUsFormData) => {
               <div className="right-side-sub-2">
                 <h6>Follow Us</h6>
                 <div className="social-icons">
-                  <Link href="https://facebook.com/placeholder" target="_blank" className="social-link">
+                 {/* <Link href="https://facebook.com/placeholder" target="_blank" className="social-link">
                     <button><FaFacebookF className="link-icon"/></button>
                     <p>seekers_of_his_kingdom</p>
-                  </Link>
-                  <Link href="https://twitter.com/placeholder" target="_blank" className="social-link">
+                  </Link> */}
+
+                  <Link href="https://twitter.com/seekersfamily_" target="_blank" className="social-link">
                   <button>
                     <FaTwitter className="link-icon"/></button>
-                    <p>seekers_of_his_kingdom</p>
+                    <p>seekersfamily_</p>
                   </Link>
-                  <Link href="https://instagram.com/placeholder" target="_blank" className="social-link">
+                  <Link href="https://instagram.com/seekersofhiskingdom" target="_blank" className="social-link">
                   <button>
                     <FaInstagram className="link-icon"/></button>
-                    <p>seekers_of_his_kingdom</p>
+                    <p>seekersofhiskingdom</p>
                   </Link>
-                  <Link href="https://linkedin.com/placeholder" target="_blank" className="social-link">
+                  {/*<Link href="https://linkedin.com/placeholder" target="_blank" className="social-link">
                   <button>
                     <FaLinkedinIn className="link-icon"/></button>
                     <p>seekers_of_his_kingdom</p>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
           </div>

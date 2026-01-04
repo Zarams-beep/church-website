@@ -11,26 +11,6 @@
 }
 /* general styling ends */
 
-/* hero styling starts */
-.hero-section {
-  @apply h-full relative overflow-hidden bg-[url('/Seekers_logo_colours_black_text.png')];
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;   
-}
-
-.slide-viewport {
-  @apply absolute inset-0 z-0 overflow-hidden;
-}
-
-.hero-section-bg{
-  @apply absolute inset-0 bg-cover bg-center;
-}
-
-.overlay {
-  @apply absolute inset-0 bg-black/40 z-10;
-}
-/* hero styling ends */
 
 /*about story styling starts */
 .about-story-container{

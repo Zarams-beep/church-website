@@ -6,7 +6,7 @@
     @apply flex items-start lg:flex-row flex-col gap-5 mt-[6rem]
 }
 .left-side-container{
-    @apply space-y-6 bg-softWhite rounded-lg py-4 px-6 w-full lg:w-[50rem] h-auto lg:h-[40rem] overflow-hidden
+    @apply space-y-6 bg-softWhite rounded-lg py-4 px-6 w-full lg:w-[50rem] h-auto overflow-hidden
 }
 .left-side-container header{
     @apply flex flex-col gap-3;
@@ -21,7 +21,7 @@
     @apply text-muted italic;
 }
 .left-side-form {
-    @apply flex flex-col gap-2;
+    @apply flex flex-col gap-2 h-full;
 }
 .left-side-form-sub{
     @apply

@@ -46,30 +46,20 @@ const Footer = () => {
         <section className="footer-section-1">
           <h5 className="footer-section-title">Contact Us</h5>
           <a href="#" className="location">
-            Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016
+           Virtual
           </a>
-          <a href="tel:+1 202-918-2132">+1 202-918-2132</a>
-          <a href="mailto:info@example.com">info@example.com</a>
+          <a href="tel:+23481502332712">+23481502332712</a>
+          <a href="mailto:seekersofhiskingdomglobal@gmail.com">seekersofhiskingdomglobal@gmail.com</a>
         </section>
       </div>
 
       <div className="footer-2">
         <div className="footer-sub-2">
           <div className="footer-icons">
-            <a href="#">
-              {" "}
-              <TiSocialLinkedinCircular className="footer-icon" />
-            </a>
-            <a href="#">
-              {" "}
-              <TiSocialFacebookCircular className="footer-icon" />
-            </a>
-            <a href="#">
-              {" "}
+            <a href="https://instagram.com/seekersofhiskingdom" target="_blank">
               <TiSocialInstagramCircular className="footer-icon" />
             </a>
-            <a href="#">
-              {" "}
+            <a href="https://twitter.com/seekersfamily_" target="_blank">
               <TiSocialTwitterCircular className="footer-icon" />
             </a>
           </div>
