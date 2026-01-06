@@ -37,15 +37,15 @@ const Footer = () => {
 
         <section className="footer-section-1">
           <h5 className="footer-section-title">Company</h5>
-          <Link href="#">How we work</Link>
+          <Link href="#">Teams</Link>
           <Link href="#">Terms of service</Link>
-          <Link href="#">Pricing</Link>
           <Link href="#">FAQ</Link>
         </section>
 
         <section className="footer-section-1">
           <h5 className="footer-section-title">Contact Us</h5>
           
+          <a href="tel:+23481502332712">+23481502332712</a>
           <a href="tel:+23481502332712">+23481502332712</a>
           <a href="mailto:seekersofhiskingdomglobal@gmail.com">seekersofhiskingdomglobal@gmail.com</a>
         </section>

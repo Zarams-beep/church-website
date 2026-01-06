@@ -12,13 +12,13 @@ interface WhatsAppContact {
 
 const contacts: WhatsAppContact[] = [
   {
-    name: "Pastor John",
-    phone: "2348012345678", // Format: country code + number (no + or spaces)
+    name: "OJG",
+    phone: "2348150232712",
     message: "Hello, I would like to know more about the church",
   },
   {
-    name: "Church Admin",
-    phone: "2348087654321",
+    name: "Dee",
+    phone: "2348163342415",
     message: "Hi, I need assistance",
   },
 ];
