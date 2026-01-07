@@ -16,7 +16,7 @@ const HeaderBarLinks = () => {
  const links: HeaderType[] = [
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About Us", path: "/about-us" },
-    { id: 3, name: "Semon", path: "/semon" },
+    { id: 3, name: "Sermon", path: "/sermon" },
     { id: 4, name: "Community", path: "/community" },
     { id: 5, name: "Contact", path: "/contact" },
     
